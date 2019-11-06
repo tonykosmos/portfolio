@@ -1,0 +1,298 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("./assets/fonts/3976.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #636262;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 700px;
+  background: #ffffff;
+  font-family: "Ubuntu";
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
+  height: 200px;
+}
+
+.about-me .photo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35%;
+  height: 200px;
+}
+
+.about-me .photo-wrapper img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+.about-me .information {
+  width: 65%;
+  height: 200px;
+}
+
+.about-me .information__name {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.about-me .information__github-link {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.about-me .information__github-link a {
+  text-decoration: none;
+  color: #000;
+}
+
+.about-me .information__github-link a:hover {
+  color: #8a8686;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 630px;
+}
+
+.underline {
+  width: 100%;
+  height: 5px;
+  margin-top: 20px;
+  background: #000;
+  border-radius: 5px;
+}
+
+.education {
+  width: 100%;
+}
+
+.education .underline {
+  height: 3px;
+  margin-top: 0;
+  border-radius: 3px;
+}
+
+.education .block__heading {
+  cursor: pointer;
+}
+
+.block__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px;
+}
+
+.block__heading span {
+  font-size: 30px;
+}
+
+.block__heading div {
+  font-size: 40px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.education__content .education__point {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.education__content .education__point:last-child {
+  margin-bottom: 10px;
+}
+
+.projects .underline {
+  margin-top: 0;
+}
+
+.carousel {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.items-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.item {
+  display: none;
+  position: relative;
+  -webkit-animation: 0.5s ease-in-out;
+          animation: 0.5s ease-in-out;
+  margin: 0 auto;
+}
+
+.active,
+.next {
+  display: block;
+}
+
+.next {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.description {
+  margin: 30px 20%;
+  font-size: 32px;
+  border: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project-name {
+  padding: 10px;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.control.left {
+  left: 0;
+  right: auto;
+}
+
+.control.right {
+  right: 0;
+  left: auto;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 84px;
+}
+
+.arrow.right {
+  right: 50%;
+}
+
+.to-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+}
+
+.from-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+}
+
+.to-right {
+  -webkit-animation-name: right;
+          animation-name: right;
+  animation-direction: reverse;
+}
+
+.from-left {
+  -webkit-animation-name: left;
+          animation-name: left;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@-webkit-keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
+
+@media (max-width: 1500px) {
+  .description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .control > .arrow {
+    display: none;
+  }
+  .project-name {
+    display: none;
+  }
+  .description {
+    border: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

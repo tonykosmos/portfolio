@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+</head>
+<body>
+    
+  <div class="wrapper">
+    <header>
+      <div class="about-me">
+        <div class="photo-wrapper">
+          <img src="assets/images/photo.JPG" alt="">
+        </div>
+        <div class="information">
+          <div class="information__name">Anton Kosmovskiy</div>
+          <div class="information__github-link">GitHub: <a href="http://github.com/tonykosmos" target="_blank">tonykosmos</a></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="content-wrapper">
+        <div class="underline"></div>
+        <div class="education">
+          <div class="block__heading">
+            <span>Education</span>
+            <div>&gt;</div>
+          </div>
+          <div class="education__content" hidden="true">
+          <div class="underline"></div>
+          <p class="education__point">School №40, Mogilev: <br> 2004-2013</p>
+          <p class="education__point">Lyceum of Belarussian-Russian University, Mogilev:<br> 2013-2015</p>
+          <p class="education__point">BSUIR, faculty of Computer-aided design:<br> 2015-2019</p>
+          <p class="education__point">RSSchool Frontend Courses:<br> 2018-2019</p>
+        </div>
+        </div>
+        <div class="projects">
+          <div class="underline"></div>
+          <div class="block__heading">
+            <span>Projects</span>
+          </div>
+          <div class="carousel">
+              <div class="items-container">
+                <div class="item active">
+                  <div class="description">
+                    <div class="project-name">Theyalow</div>
+                    <a href="https://github.com/tonykosmos/theyalow" target="_blank"><img class="project-image" src="theyalow1.png" alt="project"></a>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="description">
+                    <div class="project-name">Repair-design-project</div>
+                    <a href="https://github.com/tonykosmos/repair-design-project" target="_blank"><img class="project-image" src="theyalow2.png" alt="project"></a>
+                  </div>
+                </div>
+              </div>
+              <div class="control left">
+                <div class="arrow left">&lt;</div>
+              </div>
+              <div class="control right">
+                <div class="arrow right">&gt;</div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
