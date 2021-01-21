@@ -1,3 +1,5 @@
+// import { database } from './appDatabase';
+
 const database = [
   [
       [
@@ -137,7 +139,7 @@ const database = [
       [
           {
               theoryHeading: 'Arithmetic Operators',
-              theoryText: `The name might be a bit of a giveaway but, Arithmetic operators pretty perform arithmetic functions on numbers (both literals and variables). The addition operator (+) in action determining the sum of two numbers. You can add as many numbers or variables together as you want or need to.`,
+              theoryText: `<p>The name might be a bit of a giveaway but, Arithmetic operators pretty perform arithmetic functions on numbers (both literals and variables).</p><img src="./assets/img/arithmeticOperators.png" alt="arithmetic-operators"> <p>The addition operator (+) in action determining the sum of two numbers.</p><div class="code-example">var x = 10 + 5 <br>document.write(x) // 15</div> <p>You can add as many numbers or variables together as you want or need to.</p><div class="code-example">var x = 10 <br>var y = x + 5 + 22 + 45 + 6548 <br>document.write(y) // 6630</div>`,
               specialTheoryText: 'Heads up! You can get the result of a string expression using the eval() function, which takes a string expression argument like eval("10 * 20 + 8") and returns the result. If the argument is empty, it returns undefined.',
               questionText: `What will the following statements display? <br />var test=5+7 <br/>document.write(test);`,
               answerOptions: ['Test', '12', '5+7'],
@@ -145,7 +147,7 @@ const database = [
           },
           {
               theoryHeading: 'Multiplication',
-              theoryText: `Want to hear a joke? What tool is best suited for math?...Multi-pliers! JavaScript is pretty good at math too though! We use the * operator to multiply one number by the other.`,
+              theoryText: `<p>Want to hear a joke?</p><p>What tool is best suited for math?...Multi-pliers!</p> <p>JavaScript is pretty good at math too though!</p><p>We use the * operator to multiply one number by the other.<b>Like this:</b><div class="code-example">var x = 10 *5 <br>document.write(x)</div>`,
               specialTheoryText: 'Heads up! 10 * "5" or "10" * "5" will give the same result. But trying to multiply a number with string values that aren’t numbers, like "sololearn" * 5 will return NaN (Not a Number).',
               questionText: `What character do we use for multiplication?`,
               answerOptions: ['&', '*', 'x'],
@@ -153,15 +155,15 @@ const database = [
           },
           {
               theoryHeading: 'Division',
-              theoryText: `What’s a swimmer's favorite kind of math?... Dive-ision! Sorry! Back to business! We use the / operator to perform division operations.`,
+              theoryText: `<p>We use the / operator to perform division operations. <p>Like this:</p><div class="code-example">var x = 100 / 5 <br>document.write(x)</div>`,
               specialTheoryText: 'Heads up! 10 * "5" or "10" * "5" will give the same result. But trying to multiply a number with string values that aren’t numbers, like "sololearn" * 5 will return NaN (Not a Number).',
-              questionText: `Beware of situations where there could be a division by 0, things get messed up when we do impossible math!`,
+              questionText: `What character do we use for division?`,
               codeFragment: '<input type="text" required>',
               correctAnswer: '/',
           },
           {
               theoryHeading: 'The Modulus',
-              theoryText: `Time to talk remainders. You hated them in school, but they’re pretty easy here, promise. The Modulus (%) operator returns the division remainder (what’s left over).`,
+              theoryText: `<p>Time to talk remainders. You hated them in school, but they’re pretty easy here, promise.</p> <p>The Modulus (%) operator returns the division remainder (what’s left over).<b>Like this:</b></p><div class="code-example">var x = 26 % 6</div><p>Because you’re left with a remainder of 2 when you divide 26 by 6.</p>`,
               specialTheoryText: 'Heads up! In JavaScript, we can use the modulus operator on integers AND on floating point numbers.',
               questionText: `What’s the result of using a modulus operator for 38%5?`,
               codeFragment: '<input type="text" required>',
@@ -169,7 +171,7 @@ const database = [
           },
           {
               theoryHeading: 'Increment & Decrement',
-              theoryText: `Increment ++ The increment operator increases the numeric value of its operand by 1. When placed before the operand, it’ll return the incremented value. When placed after it, it’ll return the original value and then increments the operand. Decrement -- The decrement operator decreases the numeric value of its operand by 1. When placed before the operand, it’ll return the decremented value. When placed after the operand, it’ll return the original value and then decrements the operand.`,
+              theoryText: `<p><b>The increment operator (++)</b> increases the numeric value of its operand by 1. When placed before the operand, it’ll return the incremented value. When placed after it, it’ll return the original value and then increments the operand.</p> <p><b>The decrement operator(--)</b> decreases the numeric value of its operand by 1. When placed before the operand, it’ll return the decremented value. When placed after the operand, it’ll return the original value and then decrements the operand.</p><p><b>Some examples</b></p><img src="./assets/img/inc&decOperators.png" alt="examplesOfInc&DecOperators">`,
               specialTheoryText: 'Heads up! Just like the math you learned in school, you can change the order of the arithmetic operations by using parentheses. Like this: var x = (100 + 50) * 3;',
               questionText: `What are increment and decrement are used for?`,
               answerOptions: ['To get the remainder of the division of two numbers', 'Adding or subtracting 1 from a number', 'To change the sign of the number to "+" or "-"'],
@@ -179,7 +181,7 @@ const database = [
       [
           {
               theoryHeading: 'Assignment Operators',
-              theoryText: `Next in a series very logically named operators is... Assignment operators! And you guessed it, we use these guys to assign values to JavaScript variables.`,
+              theoryText: `<p>Next in a series very logically named operators is... <b>Assignment operators!</b></p><p> And you guessed it, we use these guys to assign values to JavaScript <b>variables</b>.</p><img src="./assets/img/assignmentOperators.png" alt="assignment Operators">`,
               specialTheoryText: 'Heads up! You can use multiple assignment operators in one line, such as x -= y += 9.',
               questionText: `Calculate and enter the resulting value of this expression: <br />var result = 20; <br />result *= 5;`,
               codeFragment: '<input type="text" required>',
@@ -190,7 +192,7 @@ const database = [
       [
           {
               theoryHeading: 'Comparison Operators',
-              theoryText: `We can use comparison operators in logical statements to find out if variables or values are different. You get either true or false. For example, the equal to (==) operator checks whether the operands' values are equal.`,
+              theoryText: `<p>We can use <b>comparison operators</b> in logical statements to find out if variables or values are different.</p> <p>You get either <b>true</b> or <b>false</b>.</p><p>For example, the equal to (==) operator checks whether the operands' values are equal.</p><div class="code-example">var num = 10;<br> // num == 8 will return false</div>`,
               specialTheoryText: 'Heads up! You can compare all types of data with comparison operators, they’ll always return true or false.',
               questionText: `What do comparison operators return?`,
               answerOptions: ['true', 'wrong', 'false', 'right'],
@@ -198,7 +200,7 @@ const database = [
           },
           {
               theoryHeading: 'Comparison Operators',
-              theoryText: `Check out this table to see a breakdown of comparison operators. <br /> <img src="./assets/images/operationsTable.png" alt="operations-table">`,
+              theoryText: `<p>Check out this table to see a breakdown of comparison operators.</p><img src="./assets/img/comparsionOperators.png" alt="comparsion Operators">`,
               specialTheoryText: 'Heads up! One important thing to remember when we use operators, is that they only work when they’re comparing the same data type; numbers with numbers, strings with strings, you get the idea.',
               questionText: `What are increment and decrement are used for?`,
               codeFragment: 'val1 <input type="text" required> val2 // are equal <br> val1 <input type="text" required> val2 // not equal <br> val1 <input type="text" required> val2 // less than <br> val1 <input type="text" required> val2 // are strict equal (identical)',
@@ -208,7 +210,7 @@ const database = [
       [
           {
               theoryHeading: 'Logical Operators',
-              theoryText: `Logical Operators, also known as Boolean Operators, (or the Vulcan Operators….ok, that one isn't true) evaluate an expression and return true or false. Check out the table below to see more details on the logical operators (AND, OR, NOT). <br /><img src="./assets/images/logicalOperators.png" alt="logical operators table">`,
+              theoryText: `<p><b>Logical</b> Operators, also known as <b>Boolean</b> Operators, (or the Vulcan Operators….ok, that one isn't <b>true</b>) evaluate an expression and return <b>true</b> or <b>false</b>.</p> <p>Check out the table below to see more details on the logical operators (<b>AND, OR, NOT</b>).</p><img src="./assets/img/logicalOperators.png" alt="logical Operators">`,
               specialTheoryText: 'Heads up! You can check all types of data; comparison operators always return true or false.',
               questionText: `Logical AND (&&) returns true if:`,
               answerOptions: ['If one of the operands is true, but not both', 'If both operands are true', 'If only one of the operands is true'],
@@ -216,7 +218,7 @@ const database = [
           },
           {
               theoryHeading: 'Conditional (Ternary) Operator',
-              theoryText: `Conditional, or Ternary, operators assign a value to a variable, based on some condition. here’s an example: <br />var isAdult = (age < 18) ? "Too young": "Old enough"; <br />If the variable age is a value below 18, the value of the variable isAdult will be "Too young". Otherwise the value of isAdult will be "Old enough".`,
+              theoryText: `<p>Let's take a look at an example. Here we’ve connected two Boolean expressions with the <b>AND</b> operator.</p><div class="code-example">(4 &gt; 2) && (10 &lt; 15)</div><p>For this expression to be true, both conditions need to be true.<br>- The first condition determines whether 4 is greater than 2, which is true.<br>- The second condition determines whether 10 is less than 15, which is also true.</p><b>Conditional</b>, or <b>Ternary</b>, <b>operators</b> assign a value to a variable, based on some condition.</p> <p>This is what the syntax would look like:</p><div class="code-example">variable = (condition) ? value1: value2 </div><p>And here’s an example:</p><div class="code-example">var isAdult = (age &lt; 18) ? "Too young": "Old enough";</div><p>If the variable age is a value below 18, the value of the variable isAdult will be "Too young". Otherwise the value of isAdult will be "Old enough".</p>`,
               specialTheoryText: 'Heads up! With logical operators you can connect as many expressions as you want or need to.',
               questionText: `Logical NOT returns true, if: `,
               answerOptions: ['The operand is true', 'The operand is false'],
@@ -226,7 +228,7 @@ const database = [
       [
           {
               theoryHeading: 'String Operators',
-              theoryText: `Time to introduce the most useful operator for strings - concatenation. We can use concatenation (represented by the + sign) to build strings made up of multiple smaller strings, or by joining strings with other types`,
+              theoryText: `<p>Time to introduce the most useful operator for strings - <b>concatenation</b>.</p><p>We can use concatenation (represented by the + sign) to build strings made up of multiple smaller strings, or by joining strings with other types. Check it out:<div class="code-example">var myString1 = "I am learning ";<br>var myString2 = "JavaScript with SoloLearn.";<br>document.write(myString1 + myString2); // I am learning JavaScript with SoloLearn. </div>`,
               specialTheoryText: 'Heads up! Numbers in quotes are treated as strings: So "42" is not the number 42, it’s a string that includes the two separate characters, 4 and 2.',
               questionText: `What’s the output of the following code? <br />var x = "50";<br />var y = "100";<br />document.write(x+y);`,
               answerOptions: ['5000', '50100', 'Null', '150'],
@@ -255,28 +257,53 @@ const database = [
       [
           {
               theoryHeading: 'The if Statement',
-              theoryText: `Often when we write code, we want to perform different actions based on different conditions. And this is where conditional statements come in. There are a bunch of different conditionals, to cover, but we’re starting with one of the most useful: "if". We use if to specify a block of code that we want to be executed if a specified condition is true. `,
+              theoryText: `<p>Often when we write code, we want to perform different actions based on different conditions.</p><p>And this is where <b>conditional statements</b> come in.</p> <p>There are a bunch of different conditionals, to cover, but we’re starting with one of the most useful: "if".</p><p>We use <b>if</b> to specify a block of code that we want to be executed if a specified condition is true.</p><div class="code-example">if (condition) {<br>&nbsp;&nbsp;statements <br>}</div><p>The statements will only be executed if the specified condition is <b>true</b>. Let’s take a look at an example:</p><div class="code-example">var nyNum = 7;<br>var myNum = 10;<br>if (myNum &lt; myNum) {<br>&nbsp;&nbsp;alert("JavaScript is easy to learn."); <br>}</div>`,
               specialTheoryText: 'Heads up! You can see from the example above, we’ve used the JavaScript alert() to generate a popup alert box that contains the information inside the parentheses.',
               questionText: `Add the characters that complete the statement:`,
               codeFragment: 'if <input type="text" required> var1 > var2 <input type="text" required><br><input type="text" required><br>document.write("OK");<br><input type="text" required>',
-              correctAnswer: ['(', ')', '}', '}'],
+              correctAnswer: ['(', ')', '{', '}'],
+          },
+          {
+              theoryHeading: 'The if Statement',
+              theoryText: `<p>Here’s a little more detail on the if statement.</p><p>This is an example of a <b>false</b> conditional statement:</p><div class="code-example">var nyNum = 7;<br>var myNum = 10;<br>if (myNum &gt; myNum) {<br>&nbsp;&nbsp;alert("JavaScript is easy to learn."); <br>}</div><p>Because the condition evaluates to false, the alert statement gets skipped and the program continues with the line after the if statement's closing curly brace.</p>`,
+              specialTheoryText: 'Heads up! if is in lowercase letters. Uppercase letters (If or IF) won’t work.',
+              questionText: `What happens if the tested condition is false?`,
+              answerOptions: ['The code does nothing and moves to the next section', "The code's execution will be stopped", 'The code in the braces is executed anyway'],
+              correctAnswer: 'The code does nothing and moves to the next section',
           },
       ],
       [
           {
               theoryHeading: 'The else Statement',
-              theoryText: `Right, so we’ve seen that the action gets skipped when a code block using the if statement evaluates to false, but what if we want something else to happen. Well, we use the "else" statement, of course! We can use the else statement to specify a block of code that will execute if the condition is false.`,
+              theoryText: `<p>Right, so we’ve seen that the action gets skipped when a code block using the if statement evaluates to false, but what if we want something else to happen. Well, we use the "else" statement, of course!</p><p>We can use the <b>else</b> statement to specify a block of code that will execute if the condition is <b>false</b>.Like this:</p><div class="code-example">if (expression) {<br>&nbsp;&nbsp;&nbsp;// executed if condition is true <br>} else {<br>&nbsp;&nbsp;&nbsp;// executed if condition is true <br>}</div>`,
               specialTheoryText: 'Heads up! You can skip the curly braces if the code under the condition contains only one command.',
               questionText: `The "else" statement is created to do what?`,
               answerOptions: ['Ignore the condition testing', 'Tell JavaScript to execute something if the condition is false', 'Test a new condition for true or false'],
               correctAnswer: 'Tell JavaScript to execute something if the condition is false',
-          }
+          },
+          {
+              theoryHeading: 'The else Statement',
+              theoryText: `<p>Here’s another example of the <b>if</b> and <b>else</b> statements working together:</p><div class="code-example">var myNum = 7;<br>var myNum = 10;<br>if (myNum > myNum) {<br>&nbsp;&nbsp;&nbsp;alert("This is my first condition");<br>} else {<br>&nbsp;&nbsp;&nbsp;alert("This is my second condition");<br>}</div><p>Let's translate that example. It says:</p>- <b>If</b> myNum1 is greater than myNum2, alert "This is my first condition";</p><p>- <b>Else</b>, alert "This is my second condition".</p>`,
+              specialTheoryText: `Heads up! There's another way to do this check using the ? operator: a > b ? alert(a) : alert(b).`,
+              questionText: `Fill in the blanks to create a valid if...else statement:`,
+              codeFragment: 'var age = 25;<br><input type="text"> (age &gt;= 18) {<br>&nbsp;&nbsp;&nbsp;alert("Allowed.");<br>}<br><input type="text"> {<br>&nbsp;&nbsp;&nbsp;alert("Not allowed.");<br>}',
+              correctAnswer: ['if', 'else'],
+          },
       ],
-      [],
+      [
+          {
+              theoryHeading: 'The else if Statement',
+              theoryText: `<p>We've seen <b>else</b>, we've seen <b>if</b>, time to meet <b>else if</b>.</p><p>The <b>else if</b> statement is useful because it lets us specify a new condition if the first condition is false.</p><p><b>Like this:</b><p><div class="code-example">var course = 1;<br>if (course == 1) {<br>&nbsp;&nbsp;&nbsp;document.write("&lt;h1&gt;HTML Tutorial&lt;/h1&gt;");<br>} else if (course == 2) {<br>&nbsp;&nbsp;&nbsp;document.write("&lt;h1&gt;CSS Tutorial&lt;/h1&gt;");<br>} else {<br>&nbsp;&nbsp;&nbsp;document.write("&lt;h1&gt;JS Tutorial&lt;/h1&gt;");</div><p>This is what's happening in the code above:<br>- If course is equal to 1, output "HTML Tutorial";<br>- Else, if course is equal to 2, output "CSS Tutorial";<br>- If none of the above condition is true, then output "JavaScript Tutorial";`,
+              specialTheoryText: `Heads up! The final else statement "ends" the else if statement and should be always written after the if and else if statements.`,
+              questionText: `What keyword is used to end the "else if" statement?`,
+              answerOptions: ['end', 'else', 'stop'],
+              correctAnswer: 'else',
+          },
+      ],
       [
           {
               theoryHeading: 'Switch',
-              theoryText: `What if you need to test for multiple conditions? In those cases, writing if else statements for each condition might not be the best solution. Instead, we can use the switch statement to perform different actions based on different conditions. The switch expression is evaluated once. The value of the expression is compared with the values of each case, and if there’s a match, that block of code is executed. `,
+              theoryText: `<p>What if you need to test for multiple conditions? In those cases, writing <b>if else</b> statements for each condition might not be the best solution.</b></p><p>Instead, we can use the <b>switch</b> statement to perform different actions based on different conditions.</p><p>Here's what that looks like:</p><div class="code-example">switch ​(expression) {<br>&nbsp;&nbsp;&nbsp;case n1: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;​statements <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>case n2: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;​statements <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;default: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;​statements <br>}</div> <p>The switch expression is evaluated once. The value of the expression is compared with the values of each case, and if there’s a match, that block of code is executed.</p>`,
               specialTheoryText: 'Heads up! You can achieve the same result with multiple if...else statements, but the switch statement is more effective in such situations.',
               questionText: `The switch statement can be used to replace…`,
               answerOptions: ['multiple if else statements', 'comments', 'variable declarations'],
@@ -284,7 +311,7 @@ const database = [
           },
           {
               theoryHeading: 'The break Keyword',
-              theoryText: `So we have learned that the switch statement tests a code block, but we won't always want it to test the whole block. The break keyword essentially switches the switch statement off. Breaking out of the switch block stops the execution of more code and case testing inside the block.`,
+              theoryText: `<p>So we have learned that the switch statement tests a code block, but we won't always want it to test the whole block. The <b>break</b> keyword essentially switches the switch statement off.</p> Breaking out of the switch block stops the execution of more code and case testing inside the block.</p>`,
               specialTheoryText: 'Heads up! Usually, a break should be put in each case statement.',
               questionText: `What’s the output of this code?<br />var x = 3;<br />switch (x) {<br />case 1:<br />document.write(x);<br />break;<br />case 2:<br />document.write(x+2);<br />break;<br />default:<br />document.write(x+5);<br />}`,
               codeFragment: '<input type="text" required>',
@@ -292,7 +319,7 @@ const database = [
           },
           {
               theoryHeading: 'The default Keyword',
-              theoryText: `Often there will be no match, but we still need the program to output something...for this we use the default keyword, which specifies the code to run if there’s no case match.`,
+              theoryText: `<p>Often there will be no match, but we still need the program to output something...for this we use the default keyword, which specifies the code to run if there’s no case match.</p>`,
               specialTheoryText: 'Heads up! The default block can be omitted, if there is no need to handle the case when no match is found.',
               questionText: `The "default" statement is used …`,
               answerOptions: ['To finish the "case" statement', 'When no match is found', 'Because it is obligatory'],
@@ -302,7 +329,7 @@ const database = [
       [
           {
               theoryHeading: 'Loops',
-              theoryText: `Loops can execute a block of code a number of times. They’re handy when you want to run the same code repeatedly, adding a different value each time. JavaScript has three types of loops: for, while, and do while.`,
+              theoryText: `<p>Loops can execute a block of code a number of times. They’re handy when you want to run the same code repeatedly, adding a different value each time.</p> <p>JavaScript has three types of loops: <b>for</b>, <b>while</b>, and <b>do while</b>.</p><p>We’ll start here with the classic <b>for</b> loop.</p><p><b>Here's the syntax:</b><p><div class="code-example">for (statement 1; statement 2; statement 3) {<br>&nbsp;&nbsp;&nbsp;code block to be executed <br>}</div><p>And here’s what happens when it runs:</p><p><b>Statement 1</b> is executed before the loop (the code block) starts.</p> <p><b>Statement 2</b> defines the condition for running the loop (the code block).</p> <p><b>Statement 3</b> is executed each time after the loop (the code block) has been executed.</p>`,
               specialTheoryText: 'Heads up! As you can see, the classic for loop has three components, or statements.',
               questionText: `The classic "for" loop consists of how many components?`,
               answerOptions: ['1', '2', '3', '4'],
@@ -310,7 +337,15 @@ const database = [
           },
           {
               theoryHeading: 'The For Loop',
-              theoryText: `If statement 2 returns true, the loop will start over again, if it returns false, the loop will end. Statement 2 is also optional, but only if you put a break inside the loop. Otherwise, the loop will never end! Statement 3 is used to change the initial variable. It can do anything, including negative increment (i--), positive increment (i = i + 15). Statement 3 is also optional, but only if you increment your values inside the loop.`,
+              theoryText: `<p>Now we've got the theory, let's look at a specific example.</p><p>This example creates a for loop that prints numbers 1 through 5:</p><div class="code-example">for (i = 1; i &lt;= 5; i++) {<br>&nbsp;&nbsp;&nbsp;document.write(i + "&lt;br /&gt;");<br>} </div><p>So what's actually happening?</p><p>In this example, <b>Statement 1</b> sets a variable before the loop starts (var i = 1).<br><b>Statement 2</b> defines the condition for the loop to run (it must be less than or equal to 5).<br><b>Statement 3</b> increases a value (i++) each time the code block in the loop has been executed.</p><p><b>Statement 1</b> is optional, and can be left out, if your values are set before the loop starts.<div class="code-example">var i = 1; <br>for (; i &lt;= 5; i++) {<br>&nbsp;&nbsp;&nbsp;document.write(i + "&lt;br /&gt;");<br>} </div>`,
+              specialTheoryText: 'Heads up! ES6 introduces other for loop types; you can learn about them in the ES6 course later.',
+              questionText: `Fill in the blanks to compose a valid for loop:`,
+              codeFragment: 'var i = 1;<br><input type="text"> (k = 1; k &lt; 10<input type="text"> k++)<input type="text"><br>&nbsp;&nbsp;&nbsp;i += k;<br>}',
+              correctAnswer: ['for', ';', '{'],
+          },
+          {
+              theoryHeading: 'The For Loop',
+              theoryText: `<p>If <b>statement 2</b> returns true, the loop will start over again, if it returns false, the loop will end.</p> <p>Statement 2 is also optional, but only if you put a <b>break</b> inside the loop. Otherwise, the loop will never end!</b> <p><b>Statement 3</b> is used to change the initial variable. It can do anything, including negative increment (i--), positive increment (i = i + 15).</p> <p>Statement 3 is also optional, but only if you increment your values inside the loop. Like this:</p><div class="code-example">var i = 0; <br>for (; i &lt; 10; ) {<br>&nbsp;&nbsp;&nbsp;document.write(i);<br>&nbsp;&nbsp;&nbsp;i++;<br>}</div>`,
               specialTheoryText: 'Heads up! You can have multiple nested for loops.',
               questionText: `Fill in the blanks to print EVEN values from 0 to 20 using a for loop:`,
               codeFragment: 'var x = 0;<br>for(; x &lt; 20; x += 2) {<br>  document.write(x);<br>}',
@@ -320,7 +355,7 @@ const database = [
       [
           {
               theoryHeading: 'The While Loop',
-              theoryText: `Time to move on to the second of our three loop statements, while. The while loop repeats through a block of code, but only as long as a specified condition is true.`,
+              theoryText: `<p>Time to move on to the second of our three loop statements, <b>while</b>.</p><p>The <b>while</b> loop repeats through a block of code, but only as long as a specified condition is true.</b><p><b>Here's the syntax:</b></p><div class="code-example">while ​(condition) { <br>&nbsp;&nbsp;&nbsp;code block <br>}</div>`,
               specialTheoryText: 'Heads up! The condition can be any conditional statement that returns true or false.',
               questionText: `The result of the condition statement is always:`,
               answerOptions: ['A Boolean value (true or false)', 'A string value', 'A numeric value'],
@@ -328,8 +363,16 @@ const database = [
           },
           {
               theoryHeading: 'The While Loop',
-              theoryText: `Endless loops are not good. And one way of this happening is if we forget to increase the variable used in the condition.`,
-              specialTheoryText: 'Heads up! Make sure that the condition in a while loop eventually becomes false.',
+              theoryText: `<p>Ok, we've got the theory, let's look at a real example:</p><div class="code-example">var i = 0; <br>while (i &lt; 10) {<br>&nbsp;&nbsp;&nbsp;document.write(i);<br>&nbsp;&nbsp;&nbsp;i++;<br>}</div><p>The loop in this code will continue to run as long as i is less than, or equal to, 10. And each time the loop runs, it will increase by 1.</p>`,
+              specialTheoryText: 'Heads up! Be careful when writing conditions. If a condition is always true, the loop will run forever!',
+              questionText: `Fill in the blanks to print x's values from 1 to 5.`,
+              codeFragment: '<div class="code-fragment">var x = 1;<br><input type="text">(x &lt;= <input type="text">) {<br>&nbsp;&nbsp;&nbsp;document.write(x + "&lt;br /&gt;");<br>&nbsp;&nbsp;&nbsp;x = <input type="text"> + 1;<br>} </div>',
+              correctAnswer: ['while', '5', 'x'],
+          },
+          {
+              theoryHeading: 'The While Loop',
+              theoryText: `<p>Endless loops are not good. And one way of this happening is if we forget to increase the variable used in the condition.</p>`,
+              specialTheoryText: 'Heads up! Make sure that the condition in a <b>while</b> loop eventually becomes <b>false</b>.>',
               questionText: `How many times will the while loop run, if we remove the counting variable increment statement?`,
               answerOptions: ['1', '4', 'Infinite'],
               correctAnswer: 'Infinite',
@@ -338,7 +381,7 @@ const database = [
       [
           {
               theoryHeading: 'The Do...While Loop',
-              theoryText: `Almost done with loops! You're doing great! The last loop we’re looking at in this module is the do...while loop, it's a variant of the while loop but with one important difference. This loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true.`,
+              theoryText: `<p>Almost done with loops! You're doing great!</p> <p>The last loop we’re looking at in this module is the <b>do...while</b> loop, it's a variant of the while loop but with one important difference.</p> <p>This loop will execute the code block once, before checking if the condition is true, and then it will repeat the loop as long as the condition is true.</p><p><b>Here’s the Syntax:</b></p><div class="code-example">do {<br>&nbsp;&nbsp;&nbsp;code block <br>} <br>while (condition);</div>`,
               specialTheoryText: 'Heads up! Note the semicolon used at the end of the do...while loop. This is important.',
               questionText: `Apply the "do" and "while" keywords in their corresponding positions.`,
               codeFragment: 'var count = 1;<br><input type="text" required> { <br>  document.write("hello!");<br>  count++;<br>}<br><input type="text" required> (count &lt; 10);',
@@ -348,7 +391,7 @@ const database = [
       [
           {
               theoryHeading: 'Break',
-              theoryText: `We've met the break statement earlier in this module, we use it to "jump out" of a loop and continue executing the code after the loop.`,
+              theoryText: `<p>We've met the <b>break</b> statement earlier in this module, we use it to "jump out" of a loop and continue executing the code after the loop.</p><p><b>Like this:</b></p><div class="code-example">for (i = 0; i &lt; 10; i++) {<br>&nbsp;&nbsp;&nbsp;if (i == 5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break;<br>&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;document.write(i + "&lt;br /&gt;");<br>}</div><p>In this example, once i reaches 5, it will break out of the loop.</p>`,
               specialTheoryText: 'Heads up! You can use the return keyword to return some value immediately from the loop inside of a function. This will also break the loop.',
               questionText: `The "break" statement:`,
               answerOptions: ['Ends the execution of the loop', 'Stops the whole script', 'Ignores the current iteration and passes to the next'],
@@ -356,7 +399,7 @@ const database = [
           },
           {
               theoryHeading: 'Continue',
-              theoryText: `We're nearly done with module 3! One last thing to cover. Unlike the break statement, the continue statement breaks only one iteration in the loop, and continues with the next iteration.`,
+              theoryText: `<p>We're nearly done with module 3! One last thing to cover.</p><p>Unlike the <b>break</b> statement, the <b>continue</b> statement breaks only one iteration in the loop, and continues with the next iteration.</p><p><b>Like this:</b></p><div class="code-example">for (i = 0; i &lt; 10; i++) {<br>&nbsp;&nbsp;&nbsp;if (i == 5) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;continue;<br>&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;document.write(i + "&lt;br /&gt;");<br>}</div>`,
               specialTheoryText: 'Heads up! The value 5 is not printed, because continue skips that iteration of the loop.',
               questionText: `What’s the output of this code?<br />var sum=0; <br />for(i=4; i<8; i++) {<br />if (i == 6) {<br />continue; <br />}<br />sum += i;<br />}<br />document.write(sum);`,
               codeFragment: '<input type="text" required>',
@@ -385,7 +428,7 @@ const database = [
       [
           {
               theoryHeading: 'JavaScript Functions',
-              theoryText: `A JavaScript function is a block of code designed to perform a particular task. The main advantages of using functions: Code reuse: Define the code once, and use it many times. Use the same code many times with different arguments, to produce different results.`,
+              theoryText: `<p>A JavaScript <b>function</b> is a block of code designed to perform a particular task. The main advantages of using functions:</p> <p>- Code reuse: Define the code once, and use it many times.</p> <p>- Use the same code many times with different <b>arguments</b>, to produce different results.</p>`,
               specialTheoryText: 'Heads up! A JavaScript function is executed when "something" invokes, or calls, it.',
               questionText: `What is a function?`,
               answerOptions: ['Arithmetical term', 'Profession', 'A certain block of code that can be reused over and over again'],
@@ -393,7 +436,7 @@ const database = [
           },
           {
               theoryHeading: 'Defining a Function',
-              theoryText: `To define a JavaScript function, use the function keyword, followed by a name, followed by a set of parentheses (). The code to be executed by the function is placed inside curly brackets {}.`,
+              theoryText: `<p>To define a JavaScript function, use the <b>function</b> keyword, followed by a <b>name</b>, followed by a set of <b>parentheses ()</b>.</p> <p>The code to be executed by the function is placed inside curly brackets {}.</p><div class="code-example">function name() {<br>&nbsp;&nbsp;&nbsp;// code to be executed <br>} </div>`,
               specialTheoryText: 'Heads up! Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).',
               questionText: `Add the corresponding keyword and symbols to create a function named "test".`,
               codeFragment: '<input type="text" required> test() <input type="text" required><br>/* some code /* <br><input type="text" required>',
@@ -401,7 +444,7 @@ const database = [
           },
           {
               theoryHeading: 'Calling a Function',
-              theoryText: `To execute the function, you need to call it. To call a function, start with the name of the function, then follow it with the arguments in parentheses.`,
+              theoryText: `<p>To execute the function, you need to call it.</p> <p>To call a function, start with the name of the function, then follow it with the arguments in parentheses.</p><p><b>Example:</b></p><div class="code-example">function myFunction() {<br>&nbsp;&nbsp;&nbsp;alert("Calling a Function!");<br>} <br><br>myFunction(); </div>`,
               specialTheoryText: 'Heads up! Always remember to end the statement with a semicolon after calling the function.',
               questionText: `Fill in the blanks to define and call the "hello" function.`,
               codeFragment: '<input type="text" required>hello() { <br>  alert("Hi there");<br>}<br><input type="text" required>',
@@ -409,7 +452,7 @@ const database = [
           },
           {
               theoryHeading: 'Calling Functions',
-              theoryText: `Once the function is defined, JavaScript allows you to call it as many times as you want to.`,
+              theoryText: `<p>Once the function is defined, JavaScript allows you to call it as many times as you want to.</p><div class="code-example">function myFunction() {<br>&nbsp;&nbsp;&nbsp;alert("Alert box!");<br>} <br><br>myFunction();<br>// "Alert box!"<br><br>// some other code <br><br>myFunction();<br>// "Alert box!"</div>`,
               specialTheoryText: `You can also call a function using this syntax: myFunction.call(). The difference is that when calling in this way, you're passing the 'this' keyword to a function. You'll learn about it later.`,
               questionText: `How many times can the function be executed inside a web page?`,
               answerOptions: ['1024', '2', 'As many as needed'],
@@ -419,15 +462,15 @@ const database = [
       [
           {
               theoryHeading: 'Function Parameters',
-              theoryText: `Functions can take parameters. Function parameters are the names listed in the function's definition.`,
-              specialTheoryText: `As with variables, parameters should be given names, which are separated by commas within the parentheses.`,
+              theoryText: `<p>Functions can take <b>parameters</b>.</p> <p>Function <b>parameters</b> are the names listed in the function's definition.</p><p><b>Syntax:</b></p><div class="code-example">functionName(param1, param2, param3) {<br>&nbsp;&nbsp;&nbsp;// some code <br>}</div>`,
+              specialTheoryText: `As with variables, parameters should be given <b>names</b>, which are separated by commas within the parentheses.`,
               questionText: `What do you need to do to create a parameter?`,
               answerOptions: ['Use the "param" keyword', 'Write a variable name in the parentheses', 'Use the "var" keyword'],
               correctAnswer: 'Write a variable name in the parentheses',
           },
           {
               theoryHeading: 'Using Parameters',
-              theoryText: `After defining the parameters, you can use them inside the function. This function takes in one parameter, which is called name. When calling the function, provide the parameter's value (argument) inside the parentheses.`,
+              theoryText: `<p>After defining the parameters, you can use them inside the function.</p><div class="code-example">function sayHello(name) {<br>&nbsp;&nbsp;&nbsp;alert("Hi, " + name);<br>} <br><br>sayHello("David");</div> <p>This function takes in one parameter, which is called <b>name</b>. When calling the function, provide the parameter's value (argument) inside the parentheses.</p>`,
               specialTheoryText: `Function arguments are the real values passed to (and received by) the function.`,
               questionText: `When and how is the parameter used?`,
               answerOptions: ['By calling the function and placing the value in the parentheses', 'By placing the value before the function call', 'By placing the value before the function name'],
@@ -435,7 +478,7 @@ const database = [
           },
           {
               theoryHeading: 'Function Parameters',
-              theoryText: `You can define a single function, and pass different parameter values (arguments) to it.`,
+              theoryText: `<p>You can define a single function, and pass different parameter values (arguments) to it.</p><div class="code-example">function sayHello(name) {<br>&nbsp;&nbsp;&nbsp;alert("Hi, " + name);<br>} <br><br>sayHello("David");<br>sayHello("Sarah");<br>sayHello("John");</div>`,
               specialTheoryText: `This will execute the function's code each time for the provided argument.`,
               questionText: `Fill the blanks to declare a function and call it, by passing "Test" as the argument:`,
               codeFragment: '<input type="text" required> myAlert(txt) {<br>  alert("Hello " + txt);<br>}<br><input type="text" required><input type="text" required>;',
@@ -445,15 +488,15 @@ const database = [
       [
           {
               theoryHeading: 'Multiple Parameters',
-              theoryText: `You can define multiple parameters for a function by comma-separating them.`,
-              specialTheoryText: `The example above defines the function myFunc to take two parameters.`,
+              theoryText: `<p>You can define multiple parameters for a function by <b>comma-separating</b> them.</p><div class="code-example">function myFunc(x ,y) {<br>&nbsp;&nbsp;&nbsp;// some code <br>}</div>`,
+              specialTheoryText: `The example above defines the function <b>myFunc</b> to take two parameters.`,
               questionText: `What character is used to separate parameters from each other?`,
               answerOptions: [':', '&', ';', ','],
               correctAnswer: ',',
           },
           {
               theoryHeading: 'Multiple Parameters',
-              theoryText: `When calling the function, provide the arguments in the same order in which you defined them.`,
+              theoryText: `<p>When calling the function, provide the arguments in the same order in which you defined them.</p><div class="code-example">function sayHello(name, age) {<br>&nbsp;&nbsp;&nbsp;document.write(name + " is " + age + " years old."); <br>} <br><br>sayHello("John", 20);</div>`,
               specialTheoryText: `If you pass more arguments than are defined, they will be assigned to an array called arguments. They can be used like this: arguments[0], arguments[1], etc.`,
               questionText: `Fill in the blanks to create a function alerting the sum of the two parameters.`,
               codeFragment: '<input type="text" required> myFunction(x, y) {<br>  alert(x <input type="text" required> <input type="text" required>);<br>}',
@@ -461,7 +504,7 @@ const database = [
           },
           {
               theoryHeading: 'Multiple Parameters',
-              theoryText: `After defining the function, you can call it as many times as needed. JavaScript functions do not check the number of arguments received.`,
+              theoryText: `<p>After defining the function, you can call it as many times as needed. JavaScript functions do not check the number of arguments received.</p>`,
               specialTheoryText: `If a function is called with missing arguments (fewer than declared), the missing values are set to undefined, which indicates that a variable has not been assigned a value.`,
               questionText: `How many times can the declared function be used?`,
               answerOptions: ['Any', 'Maximum ten', 'Only once'],
@@ -471,25 +514,33 @@ const database = [
       [
           {
               theoryHeading: 'Function Return',
-              theoryText: `A function can have an optional return statement. It is used to return a value from the function. This statement is useful when making calculations that require a result.`,
-              specialTheoryText: `When JavaScript reaches a return statement, the function stops executing.`,
+              theoryText: `<p>A function can have an optional <b>return</b> statement. It is used to return a value from the function.</p><p>This statement is useful when making calculations that require a result.</p>`,
+              specialTheoryText: `When JavaScript reaches a <b>return</b> statement, the function stops executing.`,
               questionText: `When is the "return" statement most frequently needed?`,
               answerOptions: ['When you need to make a calculation and receive the result', 'When you need to input data', 'When you need to add a pop-up window to the screen'],
               correctAnswer: 'When you need to make a calculation and receive the result',
           },
           {
               theoryHeading: 'Function Return',
-              theoryText: `Use the return statement to return a value.`,
-              specialTheoryText: `If you do not return anything from a function, it will return undefined.`,
+              theoryText: `<p>Use the <b>return</b> statement to return a value.</p><p>For example, let's calculate the product of two numbers, and return the result.</p><div class="code-example">function myFunction(a, b) { <br>&nbsp;&nbsp;&nbsp; return a + b;<br>} <br><br>var x = myFunction(5, 6);<br>// Return value will end up in x</div>`,
+              specialTheoryText: `If you do not return anything from a function, it will return <b>undefined</b>.`,
               questionText: `Where is the "return" statement placed?`,
               answerOptions: ['At the end of the function description', 'Outside the curly braces', 'At the beginning of the function description'],
               correctAnswer: 'At the end of the function description',
+          },
+          {
+              theoryHeading: 'Function Return',
+              theoryText: `<p><b>Another example:</b></p><div class="code-example">function addNumbers(a, b) {<br>&nbsp;&nbsp;&nbsp;var c = a + b;<br>&nbsp;&nbsp;&nbsp;return c;<br>} <br>document.write(addNumbers(40, 2));</div>`,
+              specialTheoryText: `The document.write command outputs the value returned by the function, which is the sum of the two parameters.`,
+              questionText: `Please enter the corresponding keyword to have the result of the function below displayed on the screen:`,
+              codeFragment: '<div class="code-fragment">function substrNumbrs(first, second) {<br>&nbsp;&nbsp;&nbsp;var result = first - second; <br>&nbsp;&nbsp;&nbsp;<input type="text"> result; <br>}</div>',
+              correctAnswer: 'return',
           }
       ],
       [
           {
               theoryHeading: 'The Alert Box',
-              theoryText: `JavaScript offers three types of popup boxes, the Alert, Prompt, and Confirm boxes. An alert box is used when you want to ensure that information gets through to the user. When an alert box pops up, the user must click OK to proceed. The alert function takes a single parameter, which is the text displayed in the popup box.`,
+              theoryText: `<p>JavaScript offers three types of popup boxes, the <b>Alert</b>, <b>Prompt</b>, and <b>Confirm</b> boxes.</p> <p>An <b>alert box</b> is used when you want to ensure that information gets through to the user.</p> <p>When an alert box pops up, the user must click OK to proceed. The <b>alert</b> function takes a single parameter, which is the text displayed in the popup box.</p><p><b>Example:</b><p><div class="code-example">alert("Do you realy want to leave this page?");</div>`,
               specialTheoryText: `Be careful when using alert boxes, as the user can continue using the page only after clicking OK.`,
               questionText: `How many parameters can be accepted by the "alert" function?`,
               answerOptions: ['3', '1', '2'],
@@ -497,7 +548,7 @@ const database = [
           },
           {
               theoryHeading: 'Prompt Box',
-              theoryText: `A prompt box is often used to have the user input a value before entering a page. When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value. If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns null. The prompt() method takes two parameters. <br />- The first is the label, which you want to display in the text box. <br />`,
+              theoryText: `<p>A <b>prompt box</b> is often used to have the user input a value before entering a page.</p> <p>When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.</p> <p>If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns null.</p> <p>The <b>prompt()</b> method takes two parameters: <br />- The first is the label, which you want to display in the text box. <br />- The second is a default string to display in the text box (optional).</p><p><b>Example:</b></p><div class="code-example">var user = prompt("Please enter your name");<br>alert(user);</div>`,
               specialTheoryText: `When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value. Do not overuse this method, because it prevents the user from accessing other parts of the page until the box is closed.`,
               questionText: `How many parameters can be accepted by the "alert" function?`,
               codeFragment: 'var name = <input type="text" required>("Enter your name:"); <br>alert(<input type="text" required>);',
@@ -505,7 +556,7 @@ const database = [
           },
           {
               theoryHeading: 'Confirm Box',
-              theoryText: `A confirm box is often used to have the user verify or accept something. When a confirm box pops up, the user must click either OK or Cancel to proceed. If the user clicks OK, the box returns true. If the user clicks Cancel, the box returns false. Do not overuse this method, because it also prevents the user from accessing other parts of the page until the box is closed.`,
+              theoryText: `<p>A <b>confirm box</b> is often used to have the user verify or accept something. When a confirm box pops up, the user must click either OK or Cancel to proceed.</p> <p>If the user clicks OK, the box returns <b>true</b>. If the user clicks Cancel, the box returns <b>false</b>. <p><b>Example</b></p><div class="code-example">var result = confirm("Do you really want to leave this page?") <br>if (result == true) {<br>&nbsp;&nbsp;&nbsp;alert ("Thanks for visiting");<br> } else {<br>&nbsp;&nbsp;&nbsp;alert("Thanks for staying with us");<br>}</div>`,
               specialTheoryText: `Be careful when using alert boxes, as the user can continue using the page only after clicking OK.`,
               questionText: `In the "confirm" dialog box, "OK" returns true, and "Cancel" returns ...`,
               answerOptions: ['true', 'false', 'undefined'],
@@ -549,7 +600,7 @@ const database = [
       [
           {
               theoryHeading: 'JavaScript Objects',
-              theoryText: `JavaScript variables are containers for data values. Objects are variables too, but they can contain many values. Think of an object as a list of values that are written as name:value pairs, with the names and the values separated by colons. These values are called properties.`,
+              theoryText: `<p>JavaScript variables are containers for data values. <b>Objects</b> are variables too, but they can contain many values.</p> <p>Think of an object as a list of values that are written as <b>name:value</b> pairs, with the names and the values separated by colons.</p><p><b>Example:</b></p><div class="code-example">var person = {<br>&nbsp;&nbsp;&nbsp;name: "John",<br>&nbsp;&nbsp;&nbsp;age: 31,<br>&nbsp;&nbsp;&nbsp;favColor: "green",<br>&nbsp;&nbsp;&nbsp;height: 183<br>};</div><p>These values are called <b>properties</b>.</p><img src="./assets/img/properties.png" alt="properties list">`,
               specialTheoryText: `JavaScript objects are containers for named values.`,
               questionText: `In reference to an object, color, height, weight and name are all examples of:`,
               answerOptions: ['properties', 'nouns', 'methods', 'variables'],
@@ -557,7 +608,7 @@ const database = [
           },
           {
               theoryHeading: 'Object Properties',
-              theoryText: `You can access object properties in two ways: objectName.propertyName or objectName['propertyName']. JavaScript's built-in length property is used to count the number of characters in a property or string.`,
+              theoryText: `<p>You can access object properties in two ways:</p> <div class="code-example">objectName.propertyName <br>// or <br>objectName['propertyName']</div><p>This example demonstrates how to access the age of our person object.</p><div class="code-example">var person = {<br>&nbsp;&nbsp;&nbsp;name: "John",<br>&nbsp;&nbsp;&nbsp;age: 31,<br>&nbsp;&nbsp;&nbsp;favColor: "green",<br>&nbsp;&nbsp;&nbsp;height: 183 <br>};<br>var x = person.age;<br>var y = person["age"]; </div><p>JavaScript's built-in length property is used to count the number of characters in a property or string.</p><div class="code-example">var course = {name: "JS", lessons: 41};<br>document.write(course.name.length);</div>`,
               specialTheoryText: `Objects are one of the core concepts in JavaScript.`,
               questionText: `What built-in property is used to count the number of characters in an object's property?`,
               answerOptions: ['width', 'write', 'length', 'size'],
@@ -565,7 +616,7 @@ const database = [
           },
           {
               theoryHeading: 'Object Methods',
-              theoryText: `An object method is a property that contains a function definition. Use the following syntax to access an object method: objectName.methodName(). As you already know, document.write() outputs data. The write() function is actually a method of the document object.`,
+              theoryText: `<p>An object <b>method</b> is a property that contains a <b>function definition</b>.</p> <p>Use the following syntax to access an object method:</p><div class="code-example">objectName.methodName()</div><p>As you already know, <b>document.write()</b> outputs data. The <b>write()</b> function is actually a method of the <b>document</b> object.<div class="code-example">document.write("This is some text")</div>`,
               specialTheoryText: `Methods are functions that are stored as object properties.`,
               questionText: `Access the "color" property of the "hair" object using dot syntax.`,
               codeFragment: '<input type="text" required>',
@@ -575,23 +626,23 @@ const database = [
       [
           {
               theoryHeading: 'The Object Constructor',
-              theoryText: `In the previous lesson, we created an object using the object literal (or initializer) syntax. This allows you to create only a single object. Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type. The standard way to create an "object type" is to use an object constructor function. `,
+              theoryText: `<p>In the previous lesson, we created an object using the <b>object literal</b> (or initializer) syntax.</p><div class="code-example">var person = { <br>&nbsp;&nbsp;&nbsp;name: "John", age: 42, favColor: "green"<br>};</div> <p>This allows you to create only a single object.</p><p>Sometimes, we need to set an "<b>object type</b>" that can be used to create a number of objects of a single type.</p><p>The standard way to create an "object type" is to use an object <b>constructor function</b>.</p><div class="code-example">function person(name, age, color) {<br>&nbsp;&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;&nbsp;this.age = age;<br>&nbsp;&nbsp;&nbsp;this.favColor = color;<br>}</div><p>The above function (person) is an object constructor, which takes parameters and assigns them to the object properties.</p> `,
               specialTheoryText: `Objects are one of the core concepts in JavaScript.`,
-              questionText: `The this keyword refers to the current object. Note that this is not a variable. It is a keyword, and its value cannot be changed.`,
+              questionText: `The <b>this</b> keyword refers to the <b>current object</b>. Note that <b>this</b> is not a variable. It is a keyword, and its value cannot be changed.`,
               codeFragment: 'function movie(title, director) {<br>  this.title = <input type="text" required>;<br>  this.director = <input type="text" required>;<br>}',
               correctAnswer: ['title', 'director'],
           },
           {
               theoryHeading: 'Creating Objects',
-              theoryText: `Once you have an object constructor, you can use the new keyword to create new objects of the same type.`,
-              specialTheoryText: `p1 and p2 are now objects of the person type. Their properties are assigned to the corresponding values.`,
+              theoryText: `<p>Once you have an object constructor, you can use the <b>new</b> keyword to create new objects of the same type.</p><div class="code-example">var p1 = new person("John", 42, "green");<br>var p2 = new person("Amy", 21, "red");<br><br>document.write(p1.age); <br>document.write(p2.name);</div>`,
+              specialTheoryText: `p1 and p2 are now objects of the <b>person</b> type. Their properties are assigned to the corresponding values.`,
               questionText: `What keyword is used for creating an instance of an object?`,
               answerOptions: ['make', 'var', 'new', 'inst'],
               correctAnswer: 'new',
           },
           {
               theoryHeading: 'Creating Objects',
-              theoryText: `Consider the following example. Access the object's properties by using the dot syntax, as you did before.`,
+              theoryText: `<p>Consider the following example.</p><div class="code-example">function person (name, age) {<br>&nbsp;&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;&nbsp;this.age = age;<br>} <br><br>var John = new person("John", 25);<br>var James = new person("James", 21); </div> <p>Access the object's properties by using the <b>dot syntax</b>, as you did before.</p><img src="./assets/img/dotsyntax.png" alt="dotsyntax example">`,
               specialTheoryText: `Understanding the creation of objects is essential.`,
               questionText: `Which two components are necessary in order to use information contained within an object?`,
               answerOptions: ['constructor function\'s name', 'object\'s name', 'keyword "this"', 'property\'s name'],
@@ -601,7 +652,7 @@ const database = [
       [
           {
               theoryHeading: 'Object Initialization',
-              theoryText: `Use the object literal or initializer syntax to create single objects.`,
+              theoryText: `<p>Use the <b>object literal</b> or <b>initializer</b> syntax to create single objects.<div class="code-example">var John = {name: "John", age: 25};<br>var James = {name: "James", age: 21};</div>`,
               specialTheoryText: `Objects consist of properties, which are used to describe an object. Values of object properties can either contain primitive data types or other objects.`,
               questionText: `Fill in the blanks:`,
               codeFragment: 'simba = <input type="text" required><br>  category: "Lion",<br>  gender: "Male"<br><input type="text" required>',
@@ -609,8 +660,8 @@ const database = [
           },
           {
               theoryHeading: 'Using Object Initializers',
-              theoryText: `Spaces and line breaks are not important. An object definition can span multiple lines. No matter how the object is created, the syntax for accessing the properties and methods does not change.`,
-              specialTheoryText: `Understanding the creation of objects is essential.`,
+              theoryText: `<p>Spaces and line breaks are not important. An object definition can span multiple lines.</p><div class="code-example">var John = {<br>&nbsp;&nbsp;&nbsp;name: "John",<br>&nbsp;&nbsp;&nbsp;age: 25 <br>};<br>var James = {<br>&nbsp;&nbsp;&nbsp;name: "James",<br>&nbsp;&nbsp;&nbsp;age: 21 <br>};</div><p>No matter how the object is created, the syntax for accessing the properties and methods does not change.</p><div class="code-example">document.write(John.age);</div>`,
+              specialTheoryText: `Don't forget about the second accessing syntax: John['age'].`,
               questionText: `Complete the following expression to display the "simba" object's "category" property on the screen:`,
               codeFragment: 'document.write(simba.<input type="text" required>);',
               correctAnswer: 'category',
@@ -619,15 +670,15 @@ const database = [
       [
           {
               theoryHeading: 'Methods',
-              theoryText: `Methods are functions that are stored as object properties. A method is a function, belonging to an object. It can be referenced using the this keyword. The this keyword is used as a reference to the current object, meaning that you can access the objects properties and methods using it. Defining methods is done inside the constructor function.`,
-              specialTheoryText: `The changeName method changes the object's name property to its argument.`,
+              theoryText: `<p><b>Methods</b> are functions that are stored as object properties.</p> <p>Use the following syntax to create an object method:</p><div class="code-example">methodName = function() { code lines }</div><p>Access an object method using the following syntax:</p><div class="code-example">objectName.methodName()</div><p>A method is a function, belonging to an object. It can be referenced using the <b>this</b> keyword.</p><p>The <b>this</b> keyword is used as a reference to the current object, meaning that you can access the objects properties and methods using it.</p><p>Defining methods is done inside the constructor function.</p><p>For Example:</p><div class="code-example">function person(name, age) {<br>&nbsp;&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;&nbsp;this.age = age;<br>&nbsp;&nbsp;&nbsp;this.changeName = function (name) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;&nbsp;} <br>} <br><br>var p = new person("David", 21);<br>p.changeName("John");<br><br>document.write(p.name);</div><p>In the example above, we have defined a method named <b>changeName</b> for our person, which is a function, that takes a parameter <b>name</b> and assigns it to the <b>name</b> property of the object.</p><p><b>this.name</b> refers to the name property of the object.</p>`,
+              specialTheoryText: `The <b>changeName</b> method changes the object's <b>name</b> property to its argument.`,
               questionText: `The "this" keyword in the method means:`,
               answerOptions: ['The name of the web page', 'The current object', 'The name of the given method'],
               correctAnswer: ['The current object'],
           },
           {
               theoryHeading: 'Methods',
-              theoryText: `Please associate the "testData" constructor function below with a method called "mymethod":`,
+              theoryText: `<p>You can also define the function outside of the constructor function and associate it with the object.</p><div class="code-example">function person(name, age) {<br>&nbsp;&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;&nbsp;this.age = age;<br>&nbsp;&nbsp;&nbsp;this.yearOfBirth = bornYear;<br>} <br>function bornYear() {<br>return 2016 - this.age;<br>}</div><p>As you can see, we have assigned the object's <b>yearOfBirth</b> property to the <b>bornYear</b> function.</p><p>The <b>this</b> keyword is used to access the age property of the object, which is going to call the method.</p>`,
               specialTheoryText: `Note that it's not necessary to write the function's parentheses when assigning it to an object.`,
               questionText: `Please associate the "testData" constructor function below with a method called "mymethod":`,
               codeFragment: 'function testData (first, second) {<br>  this.first = first;<br>  this.second = second;<br> this.checkData = <input type="text" required>;<br>}',
@@ -635,8 +686,8 @@ const database = [
           },
           {
               theoryHeading: 'Methods',
-              theoryText: `Call the method as usual.`,
-              specialTheoryText: `Call the method by the property name you specified in the constructor function, rather than the function name.`,
+              theoryText: `<p>Call the method as usual.</p><div class="code-example">function person(name, age) {<br>&nbsp;&nbsp;&nbsp;this.name = name;<br>&nbsp;&nbsp;&nbsp;this.age = age;<br>&nbsp;&nbsp;&nbsp;this.yearOfBirth = bornYear;<br>} <br>function bornYear() {<br>return 2016 - this.age;<br>} <br><br>var p = new person("A", 22); <br>document.write(p.yearOfBirth());</div>`,
+              specialTheoryText: `Call the method by the <b>property name</b> you specified in the constructor function, rather than the function name.`,
               questionText: `In order to use the object's properties within a function, use:`,
               answerOptions: ['Just the name of the property', 'The function\'s name', 'The "var" keyword', 'The "this" keyword'],
               correctAnswer: 'The "this" keyword',
@@ -664,7 +715,7 @@ const database = [
       [
           {
               theoryHeading: 'JavaScript Arrays',
-              theoryText: `Arrays store multiple values in a single variable. To store three course names, you need three variables. To store three course names, you need three variables.`,
+              theoryText: `<p>Arrays store multiple values in a single variable.</p> <p>To store three course names, you need three variables.</p><div class="code-example">var course1 ="HTML";<br>var course2 ="CSS";<br>var course3 ="JS"; </div> <p>But what if you had 500 courses? The solution is an <b>array</b>.</p><div class="code-example">var courses = new Array("HTML", "CSS", "JS"); </div>`,
               specialTheoryText: `This syntax declares an array named courses, which stores three values, or elements.`,
               questionText: `What two keywords do we need to create an array?`,
               answerOptions: ['object', 'new', 'function', 'Array'],
@@ -672,7 +723,7 @@ const database = [
           },
           {
               theoryHeading: 'Accessing an Array',
-              theoryText: `You refer to an array element by referring to the index number written in square brackets.`,
+              theoryText: `<p>You refer to an array element by referring to the <b>index number</b> written in <b>square brackets</b>.<p>This statement accesses the value of the first element in courses and changes the value of the second element.</p><div class="code-example">var courses = new Array("HTML", "CSS", "JS"); <br>var course = courses[0]; // HTML <br>courses[1] = "C++"; //Changes the second element</div>`,
               specialTheoryText: `[0] is the first element in an array. [1] is the second. Array indexes start with 0.`,
               questionText: `What is the output of this code?
               var arr = new Array(3, 6, 8);
@@ -682,7 +733,7 @@ const database = [
           },
           {
               theoryHeading: 'JavaScript Arrays',
-              theoryText: `Attempting to access an index outside of the array, returns the value undefined`,
+              theoryText: `<p>Attempting to access an index outside of the array, returns the value undefined.</p><div class="code-example">var courses = new Array("HTML", "CSS", "JS"); <br>document.write(courses[10]);</div>`,
               specialTheoryText: `Our courses array has just 3 elements, so the 10th index, which is the 11th element, does not exist (is undefined).`,
               questionText: `What is the result of trying to reference an array member which does not exist?`,
               answerOptions: ['null', '0', 'undefined', 'false'],
@@ -692,16 +743,16 @@ const database = [
       [
           {
               theoryHeading: 'Creating Arrays',
-              theoryText: `You can also declare an array, tell it the number of elements it will store, and add the elements later.`,
-              specialTheoryText: `An array is a special type of object. An array uses numbers to access its elements, and an object uses names to access its members.`,
+              theoryText: `<p>You can also declare an array, tell it the number of elements it will store, and add the elements later.</p><div class="code-example">var courses = new Array(3);<br>courses[0] = "HTML";<br>courses[1] = "CSS";<br>courses[2] = "JS";</div>`,
+              specialTheoryText: `An array is a special type of <b>object</b>. An array uses numbers to access its elements, and an object uses names to access its members.`,
               questionText: `Please insert the missing characters to output the third member of the array:`,
               codeFragment: 'document.write(example<input type="text" required>);',
               correctAnswer: '[2]',
           },
           {
               theoryHeading: 'Creating Arrays',
-              theoryText: `JavaScript arrays are dynamic, so you can declare an array and not pass any arguments with the Array() constructor. You can then add the elements dynamically. For greater simplicity, readability, and execution speed, you can also declare arrays using the array literal syntax.`,
-              specialTheoryText: `You can access and modify the elements of the array using the index number, as you did before. The array literal syntax is the recommended way to declare arrays.`,
+              theoryText: `<p>JavaScript arrays are dynamic, so you can declare an array and not pass any arguments with the Array() constructor. You can then add the elements dynamically.</p><div class="code-example">var courses = new Array();<br>courses[0] = "HTML";<br>courses[1] = "CSS";<br>courses[2] = "JS";<br>courses[3] = "C++"</div> <p>For greater simplicity, readability, and execution speed, you can also declare arrays using the <b>array literal</b> syntax.<p><div class="code-example">var courses = ["HTML", "CSS", "JS"];</div>`,
+              specialTheoryText: `You can access and modify the elements of the array using the index number, as you did before.The <b>array literal</b> syntax is the recommended way to declare arrays.`,
               questionText: `By entering var example = new Array(); we create an empty array which can be filled...`,
               answerOptions: ['just after it', 'anytime later', 'nevermore'],
               correctAnswer: 'anytime later',
@@ -710,7 +761,7 @@ const database = [
       [
           {
               theoryHeading: 'The length Property',
-              theoryText: `JavaScript arrays have useful built-in properties and methods. An array's length property returns the number of it's elements.`,
+              theoryText: `<p>JavaScript arrays have useful <b>built-in</b> properties and methods.</p> <p>An array's <b>length</b> property returns the number of it's elements.</p><div class="code-example">var courses = ["HTML", "CSS", "JS"];<br>document.write(courses.length)</div>`,
               specialTheoryText: `The length property is always one more than the highest array index. If the array is empty, the length property returns 0.`,
               questionText: `Array has the "length" property, because it is:`,
               answerOptions: ['a variable', 'a function', 'an object'],
@@ -718,8 +769,8 @@ const database = [
           },
           {
               theoryHeading: 'Combining Arrays',
-              theoryText: `JavaScript's concat() method allows you to join arrays and create an entirely new array.`,
-              specialTheoryText: `The concat operation does not affect the c1 and c2 arrays - it returns the resulting concatenation as a new array.`,
+              theoryText: `<p>JavaScript's <b>concat()</b> method allows you to join arrays and create an entirely new array.</p><p><b>Example:</b></p><div class="code-example">var c1 = ["HTML", "CSS"];<br>var c2 = ["JS", "C++"];<br>var courses = c1.concat(c2);</div><p>The courses array that results contains 4 elements (HTML, CSS, JS, C++).</p>`,
+              specialTheoryText: `The <b>concat</b> operation does not affect the c1 and c2 arrays - it returns the resulting concatenation as a new array.`,
               questionText: `The "concat" method takes two arrays and:`,
               answerOptions: ['outputs them to the screen', 'combines them in one new array', 'compares their members'],
               correctAnswer: 'combines them in one new array',
@@ -728,15 +779,15 @@ const database = [
       [
           {
               theoryHeading: 'Associative Arrays',
-              theoryText: `While many programming languages support arrays with named indexes (text instead of numbers), called associative arrays JavaScript does not. However, you still can use the named array syntax, which will produce an object. Now, person is treated as an object, instead of being an array. The named indexes "name" and "age" become properties of the person object.`,
-              specialTheoryText: `As the person array is treated as an object, the standard array methods and properties will produce incorrect results. For example, person.length will return 0.`,
+              theoryText: `<p>While many programming languages support arrays with named indexes (text instead of numbers), called <b>associative arrays</b> JavaScript <b>does not</b>.</p> <p>However, you still can use the named array syntax, which will produce an object.</p><p><b>For example:</b></p><div class="code-example">var person = []; //empty array <br>person["name"] = "John";<br>person["age"] = 46;<br>document.write(person["age"]);</div><p>Now, person is treated as an object, instead of being an array. The named indexes "name" and "age" become properties of the person object.</p>`,
+              specialTheoryText: `As the person array is treated as an object, the standard array methods and properties will produce incorrect results. For example, <b>person.length</b> will return 0.`,
               questionText: `In associative arrays, index numbers are replaced with:`,
               answerOptions: ['functions', 'strings', 'constants', 'variable names'],
               correctAnswer: 'strings',
           },
           {
               theoryHeading: 'Associative Arrays',
-              theoryText: `Remember that JavaScript does not support arrays with named indexes. In JavaScript, arrays always use numbered indexes. It is better to use an object when you want the index to be a string (text). Use an array when you want the index to be a number.`,
+              theoryText: `<p>Remember that JavaScript does not support arrays with named indexes.</p> <p>In JavaScript, arrays always use numbered indexes. It is better to use an <b>object</b> when you want the index to be a <b>string<b> (text).</p> <p>Use an <p>array</p> when you want the index to be a <b>number<b>.</p>`,
               specialTheoryText: `If you use a named index, JavaScript will redefine the array to a standard object.`,
               questionText: `In order to use associative arrays, the "associated" name is put in:`,
               answerOptions: ['brackets [ ]', 'strings', 'parentheses ( )', 'curly braces { }'],
@@ -746,7 +797,7 @@ const database = [
       [
           {
               theoryHeading: 'The Math Object',
-              theoryText: `The Math object allows you to perform mathematical tasks, and includes several properties. <br /> <img src="./assets/images/math.png alt="math-functions-image">`,
+              theoryText: `<p>The Math object allows you to perform mathematical tasks, and includes several properties.</p><img src="./assets/img/mathFunctions.png" alt="math functions example"><p><b>For example</b></p><div class="code-example">document.write(Math.PI)</div>`,
               specialTheoryText: `Math has no constructor. There's no need to create a Math object first.`,
               questionText: `In the Math Object, which of the following constants does NOT exist?`,
               answerOptions: ['Math.PI', 'Math.ABC', 'Math.E'],
@@ -754,7 +805,7 @@ const database = [
           },
           {
               theoryHeading: 'Math Object Methods',
-              theoryText: `The Math object contains a number of methods that are used for calculations: <br /> <img src="./assets/images/mathmethods.png alt="math-methods-image">`,
+              theoryText: `<p>The Math object contains a number of methods that are used for calculations:</p><img src="./assets/img/mathMethods.png" alt="math methods in JS">`,
               specialTheoryText: `To get a random number between 1-10, use Math.random(), which gives you a number between 0-1. Then multiply the number by 10, and then take Math.ceil() from it: Math.ceil(Math.random() * 10).`,
               questionText: `In the Math Object, which of the following methods is used to calculate the square root?`,
               answerOptions: ['sqrt', 'root', 'ceil', 'round'],
