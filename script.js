@@ -815,7 +815,7 @@ const database = [
       [
           {
               theoryHeading: 'setInterval',
-              theoryText: `The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds). It will continue calling the function until clearInterval() is called or the window is closed. `,
+              theoryText: `<p>The <b>setInterval()</b> method calls a function or evaluates an expression at specified intervals (in milliseconds).</p> <p>It will continue calling the function until <b>clearInterval()</b> is called or the window is closed.</p><p><b>For example</b></p><div class="code-example">function myAlert() {<br>&nbsp;&nbsp;&nbsp;alert("Hi");<br>} <br>setInterval(myAlert, 3000);</div><p>This will call the myAlert function every 3 seconds (1000 ms = 1 second).</p>`,
               specialTheoryText: `Write the name of the function without parentheses when passing it into the setInterval method.`,
               questionText: `Fill in the blanks to call the function "calc()" every 2 seconds`,
               codeFragment: 'setInterval(<input type="text" required>, <input type="text" required>);',
@@ -823,7 +823,7 @@ const database = [
           },
           {
               theoryHeading: 'The Date Object',
-              theoryText: `The Date object enables us to work with dates. A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.`,
+              theoryText: `<p>The <b>Date</b> object enables us to work with dates.</p> <p>A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.</p><p>Using <b>new Date()</b>, create a new date object with the current date and time</p><div class="code-example">var d = new Date();<br>//d stores the current date and time</div><p>The other ways to initialize dates allow for the creation of new date objects from the specified date and time</p><div class="code-example">new Date(milliseconds) <br>new Date(dateString) <br>new Date(year, month, day, hours, minutes, seconds, milliseconds)</div>`,
               specialTheoryText: `JavaScript dates are calculated in milliseconds from 01 January, 1970 00:00:00 Universal Time (UTC). One day contains 86,400,000 millisecond.`,
               questionText: `What information results from creating a Date Object?`,
               answerOptions: ['The current date and time', 'The date when the web page was hosted', 'An empty string'],
@@ -831,7 +831,7 @@ const database = [
           },
           {
               theoryHeading: 'Date Methods',
-              theoryText: `When a Date object is created, a number of methods make it possible to perform operations on it. <br /> <img src="./assets/images/dateMethods.png alt="date-methods-image">`,
+              theoryText: `<p>When a Date object is created, a number of <b>methods</b> make it possible to perform operations on it.</p><img src="./assets/img/dateMethods.png" alt="date methods in JS"><p><b>For example</b></p><div class="code-example">var d = new Date(); <br>var hours = d.getHours();<br><br>document.write(hours);</div>`,
               specialTheoryText: `The innerHTML property sets or returns the HTML content of an element. In our case, we are changing the HTML content of our document's body. This overwrites the content every second, instead of printing it repeatedly to the screen.`,
               questionText: `Fill in the blanks to initialize a date object representing the current date and time:`,
               codeFragment: '<input type="text" required> date = <input type="text" required> Date();',
@@ -869,8 +869,8 @@ const database = [
   [
       [
           {
-              theoryHeading: 'The Date Object',
-              theoryText: `When you open any webpage in a browser, the HTML of the page is loaded and rendered visually on the screen. To accomplish that, the browser builds the Document Object Model of that page, which is an object oriented model of its logical structure. The DOM of an HTML document can be represented as a nested set of boxes:`,
+              theoryHeading: 'The DOM',
+              theoryText: `<p>When you open any webpage in a browser, the HTML of the page is loaded and rendered visually on the screen.</p> <p>To accomplish that, the browser builds the <b>Document Object Model</b> of that page, which is an object oriented model of its logical structure.</p> <p>The DOM of an HTML document can be represented as a nested set of boxes:</p><img src="./assets/img/DOM_Scheme.png" alt="DOM Scheme">`,
               specialTheoryText: `JavaScript can be used to manipulate the DOM of a page dynamically to add, delete and modify elements.`,
               questionText: `What is DOM?`,
               answerOptions: ['Definitive Object Model', 'Document Object Model', 'Document Orientation Model'],
@@ -878,7 +878,7 @@ const database = [
           },
           {
               theoryHeading: 'DOM Tree',
-              theoryText: `The DOM represents a document as a tree structure. HTML elements become interrelated nodes in the tree. All those nodes in the tree have some kind of relations among each other. Nodes can have child nodes. Nodes on the same tree level are called siblings.`,
+              theoryText: `<p>The DOM represents a document as a tree structure.</p> <p>HTML elements become interrelated <b>nodes</b> in the tree.</p> <p>All those nodes in the tree have some kind of relations among each other. Nodes can have <b>child</b> nodes. Nodes on the same tree level are called <b>siblings</b>.</p><p>For example, consider the following structure:</p><img src="./assets/img/DOM_Tree.png" alt="DOM Tree"><p>For the example above:<br><html> has two children (<head>, <body>);<br><head> has one child (<title>) and one parent (<html>);<br><title> has one parent (<head>) and no children;<br><body> has two children (<h1> and <a>) and one parent (<html>);`,
               specialTheoryText: `It is important to understand the relationships between elements in an HTML document in order to be able to manipulate them with JavaScript.`,
               questionText: `In the following HTML, which element is the parent of h1? <body><p><h1>Hi</h1></p></body>`,
               answerOptions: ['p', 'html', 'body'],
@@ -886,8 +886,8 @@ const database = [
           },
           {
               theoryHeading: 'The document Object',
-              theoryText: `There is a predefined document object in JavaScript, which can be used to access all elements on the DOM. In other words, the document object is the owner (or root) of all objects in your webpage. So, if you want to access objects in an HTML page, you always start with accessing the document object.`,
-              specialTheoryText: `The innerHTML property can be used on almost all HTML elements to change its content.`,
+              theoryText: `<p>There is a predefined <b>document</b> object in JavaScript, which can be used to access all elements on the DOM.</p> <p>In other words, the <b>document</b> object is the owner (or <b>root</b>) of all objects in your webpage.</p> <p>So, if you want to access objects in an HTML page, you always start with accessing the document object.</p><p><b>For example</b></p><div class="code-example">document.body.innerHTML = "Some text";</div><p>As <b>body</b> is an element of the DOM, we can access it using the <b>document</b> object and change the content of the <b>innerHTML</b> property.</p>`,
+              specialTheoryText: `The <b>innerHTML</b> property can be used on almost all HTML elements to change its content.`,
               questionText: `In the following HTML, which element is the parent of h1? <body><p><h1>Hi</h1></p></body>`,
               answerOptions: ['The document object is the root of the DOM', 'innerHTML is a property', 'body is the root of the DOM', 'innerHTML is a method'],
               correctAnswer: ['The document object is the root of the DOM', 'innerHTML is a property'],
@@ -896,7 +896,7 @@ const database = [
       [
           {
               theoryHeading: 'Selecting Elements',
-              theoryText: `All HTML elements are objects. And as we know every object has properties and methods. The document object has methods that allow you to select the desired HTML element. These three methods are the most commonly used for selecting HTML elements: document.getElementById(id), document.getElementsByClassName(name), document.getElementsByTagName(name)`,
+              theoryText: `<p>All HTML elements are <b>objects</b>. And as we know every object has <b>properties</b> and <b>methods</b>.</p> <p>The <b>document</b> object has methods that allow you to select the desired HTML element.</p> <p>These three methods are the most commonly used for selecting HTML elements:</p><div class="code-example">//finds element by id <br>document.getElementById(id) <br><br>//finds elements by class name <br>document.getElementsByClassName(name) <br><br>//finds elements by tag name <br>document.getElementsByTagName(name)</div><p>In the example below, the <b>getElementById</b> method is used to select the element with <b>id="demo"</b> and change its content:</p><div class="code-example">var elem = document.getElementById("demo"); <br>elem.innerHTML = "Hello World!";</div>`,
               specialTheoryText: `The example above assumes that the HTML contains an element with id="demo", for example <div id="demo"></div>.`,
               questionText: `Fill in the blanks to select the element with id="text" and change its content to "Hi".`,
               codeFragment: '<input type="text" required> ob = document.getElementById("<input type="text" required>");<br><input type="text" required>.innerHTML = "Hi";',
@@ -904,21 +904,26 @@ const database = [
           },
           {
               theoryHeading: 'Working with DOM',
-              theoryText: `Each element in the DOM has a set of properties and methods that provide information about their relationships in the DOM: element.childNodes returns an array of an element's child nodes. element.firstChild returns the first child node of an element. element.lastChild returns the last child node of an element.
-              element.hasChildNodes returns true if an element has any child nodes, otherwise false.
-              element.nextSibling returns the next node at the same tree level.
-              element.previousSibling returns the previous node at the same tree level.
-              element.parentNode returns the parent node of an element.`,
+              theoryText: `<p>The <b>getElementsByClassName()</b> method returns a collection of all elements in the document with the specified class name.</p><p>For example, if our HTML page contained three elements with class="demo", the following code would return all those elements as an array:</p><div class="code-example">var arr =  document.getElementsByClassName("demo");<br>//accessing the second element <br>arr[1].innerHTML = "Hi";</div><p>Similarly, the <b>getElementsByTagName</p> method returns all of the elements of the specified tag name as an array.</p><p>The following example gets all paragraph elements of the page and changes their content:</p><div class="code-example">&lt;p&gt;hi&lt;/p&gt;<br>&lt;p&gt;hello&lt;/p&gt;<br>&lt;p&gt;hi&lt;/p&gt;<br>&lt;script&gt;<br>var arr = document.getElementsByTagName("p");<br>for (var x = 0; x &lt; arr.length; x++) {<br>&nbsp;&nbsp;&nbsp;arr[x].innerHTML = "Hi there";<br>} <br>&lt;/script&gt;</div><p>The script will result in the following HTML:</p><div class="code-example">&lt;p&gt;Hi there&lt;/p&gt;<br>&lt;p&gt;Hi there&lt;/p&gt;<br>&lt;p&gt;Hi there&lt;/p&gt;</div>`,
+              specialTheoryText: `We used the length property of the array to loop through all the selected elements in the above example.`,
+              questionText: `Fill in the blanks to select all div elements and alert the content of the third div.`,
+              codeFragment: '<div class="code-fragment">var arr = document.getElementsByTagName("<input type="text">");<br>alert(arr[<input type="text">].innerHTML);',
+              correctAnswer: ['div', '2'],
+          },
+          {
+              theoryHeading: 'Working with DOM',
+              theoryText: `<p>Each element in the DOM has a set of properties and methods that provide information about their relationships in the DOM:<br>element.childNodes returns an array of an element's child nodes.<br>element.firstChild returns the first child node of an element.<br>element.lastChild returns the last child node of an element.
+              <br>element.hasChildNodes returns true if an element has any child nodes, otherwise false.<br>element.nextSibling returns the next node at the same tree level.<br>element.previousSibling returns the previous node at the same tree level.<br>element.parentNode returns the parent node of an element.</p><div class="code-example">&lt;html&gt;<br>&nbsp;&nbsp;&lt;body&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id ="demo"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;some text&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;some other text&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;script&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;var a = document.getElementById("demo");<br>&nbsp;&nbsp;&nbsp;&nbsp;var arr = a.childNodes;<br>&nbsp;&nbsp;&nbsp;&nbsp;for (var x = 0; x &lt; arr.length; x++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;arr[x].innerHTML = "new text"<br>&nbsp;&nbsp;&nbsp;&nbsp;} <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>&nbsp;&nbsp;&lt;/body&gt;<br>&lt;/html&gt;</div>`,
               specialTheoryText: `The code above changes the text of both paragraphs to "new text".`,
               questionText: `Can a node in the DOM have multiple parent nodes?`,
               answerOptions: ['No', 'Yes'],
               correctAnswer: 'No',
-          }
+          },
       ],
       [
           {
               theoryHeading: 'Changing Attributes',
-              theoryText: `Once you have selected the element(s) you want to work with, you can change their attributes. As we have seen in the previous lessons, we can change the text content of an element using the innerHTML property. Similarly, we can change the attributes of elements.`,
+              theoryText: `<p>Once you have selected the element(s) you want to work with, you can change their attributes.</p> <p>As we have seen in the previous lessons, we can change the text content of an element using the <b>innerHTML</b> property.</p> <p>Similarly, we can change the attributes of elements.For example, we can change the <b>src</b> attribute of an image:</p><div class="code-example">&lt;img id="myimg" src="orange.png" alt="" /&gt;<br>&lt;script&gt;<br>&nbsp;&nbsp;&nbsp;var el = document.getElementById("myimg");<br>&nbsp;&nbsp;&nbsp;el.src = "apple.png";<br>&lt;/script&gt;</div>`,
               specialTheoryText: `Practically all attributes of an element can be changed using JavaScript.`,
               questionText: `Fill in the blanks to select all images of the page and change their src attribute.`,
               codeFragment: 'var arr = document.getElementsByTagName("<input type="text" required>");<br>for (var x = 0; x &lt; arr.<input type="text" required>; x++) {<br>  arr[x].<input type="text" required> = "demo.jpg";<br>}',
@@ -926,7 +931,7 @@ const database = [
           },
           {
               theoryHeading: 'Changing Style',
-              theoryText: `The style of HTML elements can also be changed using JavaScript. All style attributes can be accessed using the style object of the element.`,
+              theoryText: `<p>The style of HTML elements can also be changed using JavaScript.</p> <p>All style attributes can be accessed using the <b>style</b> object of the element.<b>For example</b></p><div class="code-example">&lt;div id="demo" style="width: 200px"&gt;some text&lt;/div&gt;<br>&lt;script&gt;<br>&nbsp;&nbsp;&nbsp;var x = document.getElementById("demo");<br>&nbsp;&nbsp;&nbsp;x.style.color = "6600FF";<br>&nbsp;&nbsp;&nbsp;x.style.color = "100px"<br>&lt;script&gt;</div><p>The code above changes the text color and width of the div element.</p>`,
               specialTheoryText: `All CSS properties can be set and modified using JavaScript. Just remember, that you cannot use dashes (-) in the property names: these are replaced with camelCase versions, where the compound words begin with a capital letter. For example: the background-color property should be referred to as backgroundColor.`,
               questionText: `Fill in the blanks to change the background color of all span elements of the page.`,
               codeFragment: 'var s = document.getElementsByTagName("<input type="text" required>"); <br><input type="text" required>(var x = 0; x &lt; s.length; x++) {<br>  s[<input type="text" required>].style.backgroundColor = "#33EA73"; <br>}',
@@ -936,7 +941,7 @@ const database = [
       [
           {
               theoryHeading: 'Creating Elements',
-              theoryText: `Use the following methods to create new nodes: element.cloneNode() clones an element and returns the resulting node. document.createElement(element) creates a new element node. document.createTextNode(text) creates a new text node. This will create a new text node, but it will not appear in the document until you append it to an existing element with one of the following methods: element.appendChild(newNode) adds a new child node to an element as the last child node. element.insertBefore(node1, node2) inserts node1 as a child before node2.`,
+              theoryText: `<p>Use the following methods to create new nodes: <br>relement.<b>cloneNode</b>() clones an element and returns the resulting node; <br>document.<b>createElement</b>(element) creates a new element node; <br>document.<b>createTextNode</b>(text) creates a new text node.</p><p><b>For example</b></p><div class="code-example">var node = document.createTextNode("Some new text");</div> <p>This will create a new text node, but it will not appear in the document until you append it to an existing element with one of the following methods: <br>element.<b>appendChild</b>(newNode) adds a new child node to an element as the last child node. <br>element.<b>insertBefore</b>(node1, node2) inserts node1 as a child before node2.</p><p><b>Example:</b></p><div class="code-example">&lt;div id="demo"&gt;some content&lt;/div&gt;<br><br>&lt;script&gt;<br>&nbsp;&nbsp;// creating a new paragraph <br>&nbsp;&nbsp;var p = document.createElement("p");<br>&nbsp;&nbsp;var node = document.createTextNode("Some new text");<br>&nbsp;&nbsp;// adding the text to the paragraph<br>&nbsp;&nbsp;p.appendChild(mode);<br><br>&nbsp;&nbsp; var div = document.getElementById("demo");<br>&nbsp;&nbsp;// adding the paragraph to the div <br>&nbsp;&nbsp;div.appendChild(p);<br>&lt;/script&gt; </div>`,
               specialTheoryText: `This creates a new paragraph and adds it to the existing div element on the page.`,
               questionText: `Drag and drop from the options below to add a new <li> element to the unordered list with id="list".`,
               codeFragment: 'var el = document.<input type="text" required>("li"); <br>var txt = document.createTextNode("B"); <br>el.appendChild(txt); <br>var ul = document.<input type="text">("list"); <br>ul.<input type="text">(el);',
@@ -944,15 +949,15 @@ const database = [
           },
           {
               theoryHeading: 'Removing Elements',
-              theoryText: `To remove an HTML element, you must select the parent of the element and use the removeChild(node) method.`,
-              specialTheoryText: `An alternative way of achieving the same result would be the use of the parentNode property to get the parent of the element we want to remove:var child = document.getElementById("p1"); child.parentNode.removeChild(child);`,
+              theoryText: `<p>To remove an HTML element, you must select the parent of the element and use the <b>removeChild</b>(node) method.</p><p><b>For example</b></p><div class="code-example">&lt;div id="demo"&gt;<br>&nbsp;&nbsp;&lt;p id="p1"&gt;This is a paragraph.&lt;/p&gt;<br>&nbsp;&nbsp;&lt;p id="p2"&gt;This is another paragraph.&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;script&gt;<br>&nbsp;&nbsp;var parent = document.getElementById("demo");<br>&nbsp;&nbsp;car child = document.getElementById("p1");<br>&nbsp;&nbsp;parent.removeChild(child);<br>&lt;/script&gt;</div><p>This removes the paragraph with id="p1" from the page.</p>`,
+              specialTheoryText: `An alternative way of achieving the same result would be the use of the parentNode property to get the parent of the element we want to remove:<br>var child = document.getElementById("p1"); <br>child.parentNode.removeChild(child);`,
               questionText: `Fill the blanks to add a new <li> element to the unordered list with id="list".`,
               codeFragment: 'var par = document.getElementById("par"); <br>var node = document.getElementById("node"); <br><input type="text" required>.<input type="text" required>(<input type="text" required>);',
               correctAnswer: ['par', 'removeChild', 'node'],
           },
           {
               theoryHeading: 'Removing Elements',
-              theoryText: `To replace an HTML element, the element.replaceChild(newNode, oldNode) method is used.`,
+              theoryText: `<p>To replace an HTML element, the element.<b>replaceChild</b>(newNode, oldNode) method is used.</p><p><b>For example</b></p><div class="code-example">&lt;div id="demo"&gt;<br>&nbsp;&nbsp;&lt;p id="p1"&gt;This is a paragraph.&lt;/p&gt;<br>&nbsp;&nbsp;&lt;p id="p2"&gt;This is another paragraph.&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;script&gt;<br>&nbsp;&nbsp;var p = document.createElement("p");<br>&nbsp;&nbsp;var node = document.createTextNode("This is new");<br>&nbsp;&nbsp;p.appendChild(node);<br>&nbsp;&nbsp;var parent = document.getElementById("demo");<br>&nbsp;&nbsp;var child = document.getElementById("p1");<br>&nbsp;&nbsp;parent.replaceChild(p, child);<br>&lt;/script&gt;<br>&lt;/script&gt;</div>`,
               specialTheoryText: `The code above creates a new paragraph element that replaces the existing p1 paragraph.`,
               questionText: `Which method is used to replace nodes?`,
               answerOptions: ['replaceNodes', 'replaceChild', 'replace', 'replaceElements'],
@@ -962,7 +967,7 @@ const database = [
       [
           {
               theoryHeading: 'Animations',
-              theoryText: `Now that we know how to select and change DOM elements, we can create a simple animation. Our box element is inside a container element. Note the position attribute used for the elements: the container is relative and the box is absolute. This will allow us to create the animation relative to the container.`,
+              theoryText: `<p>Now that we know how to select and change DOM elements, we can create a simple animation.</p><p>Let's create a simple HTML page with a box element that will be animated using JS.</p>div class="code-example">&lt;style&gt;<br>#container {<br>&nbsp;&nbsp;width: 200px;<br>&nbsp;&nbsp;heigth: 200px;<br>&nbsp;&nbsp;background: green;<br>&nbsp;&nbsp;position: relative;<br>} <br>#box {<br>&nbsp;&nbsp;width: 50px;<br>&nbsp;&nbsp;height: 50px;<br>&nbsp;&nbsp;background: red;<br>&nbsp;&nbsp;position: absolute;<br>} <br>&lt;/style&gt;<br>&lt;div id="container"&gt;<br>&nbsp;&nbsp;&lt;div id="box"&gt;&lt;/div&gt;<br>&lt;/div&gt;</div> <p>Our <b>box</b> element is inside a <b>container</b> element. Note the position attribute used for the elements: the container is <b>relative</b> and the box is <b>absolute</b>. This will allow us to create the animation relative to the container.</p><p>We will be animating the red box to make it move to the right side of the container.</p>`,
               specialTheoryText: `You need to be familiar with CSS to better understand the code provided.`,
               questionText: `To create an animation relative to a container, the position attribute for the container should be set to:`,
               answerOptions: ['relative', 'box', 'absolute'],
@@ -970,33 +975,41 @@ const database = [
           },
           {
               theoryHeading: 'Animations',
-              theoryText: `To create an animation, we need to change the properties of an element at small intervals of time. We can achieve this by using the setInterval() method, which allows us to create a timer and call a function to change properties repeatedly at defined intervals (in milliseconds).`,
-              specialTheoryText: `The move() function increments the left property of the box element by one each time it is called.`,
+              theoryText: `<p>To create an animation, we need to change the properties of an element at small intervals of time. We can achieve this by using the <b>setInterval</b>() method, which allows us to create a timer and call a function to change properties repeatedly at defined intervals (in milliseconds).</p><p><b>For example:</b></p><div class="code-example">var t = setInterval(move, 500); </div><p>This code creates a timer that calls a <b>move</b>() function every 500 milliseconds. Now we need to define the <b>move</b>() function, that changes the position of the box.</p><div class="code-example">// starting position <br>var pos = 0; <br>//our box element <br>var box = document.getElementById("box"); <br><br>function move() {<br>&nbsp;&nbsp;&nbsp;pos += 1;<br>&nbsp;&nbsp;&nbsp;box.style.left = pos+"px"; //px = pixels <br>} </div>`,
+              specialTheoryText: `The <b>move</b>() function increments the <b>left</b> property of the box element by one each time it is called.`,
               questionText: `What is the interval for this timer? var t = setInterval(func, 10000);`,
               answerOptions: ['10 seconds', '1 second', '100 seconds'],
               correctAnswer: '10 seconds',
           },
           {
               theoryHeading: 'Animations',
-              theoryText: `To create an animation, we need to change the properties of an element at small intervals of time. We can achieve this by using the setInterval() method, which allows us to create a timer and call a function to change properties repeatedly at defined intervals (in milliseconds).`,
+              theoryText: `<p>The following code defines a timer that calls the move() function every 10 milliseconds</p><div class="code-example">var t = setInterval(move, 10);</div><p>However, this makes our box move to the right forever. To stop the animation when the box reaches the end of the container, we add a simple check to the move() function and use the <b>clearInterval</b>() method to stop the timer</p><div class="code-example">function move() {<br>&nbsp;&nbsp;&nbsp;if(pos >= 150) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clearInterval(t);<br>&nbsp;&nbsp;&nbsp;} else<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos += 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box.style.left = pos+"px";<br>&nbsp;&nbsp;&nbsp;} <br>}</div><p>When the left attribute of the box reaches the value of 150, the box reaches the end of the container, based on a container width of 200 and a box width of 50.</p><p><b>The final code:</b></p><div class="code-example">var pos = 0;<br>var box = document.getElementById('box');<br>var t = setInterval(move, 10);<br><br>function move() {<br>&nbsp;&nbsp;&nbsp;if(pos >= 150) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;clearInterval(t);<br>&nbsp;&nbsp;&nbsp;} else {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pos += 1;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;box.style.left = pos + "px";<br>&nbsp;&nbsp;&nbsp;} <br>}</div>`,
               specialTheoryText: `The move() function increments the left property of the box element by one each time it is called.`,
-              questionText: `What is the interval for this timer? var t = setInterval(func, 10000);`,
-              answerOptions: ['10 seconds', '1 second', '100 seconds'],
-              correctAnswer: '10 seconds',
+              questionText: `Which function is used to stop a setInterval timer?`,
+              answerOptions: ['clearInterval', 'stopInterval', 'clearTimer', 'stopTimer'],
+              correctAnswer: 'clearInterval',
           }
       ],
       [
           {
               theoryHeading: 'Events',
-              theoryText: `You can write JavaScript code that executes when an event occurs, such as when a user clicks an HTML element, moves the mouse, or submits a form. When an event occurs on a target element, a handler function is executed. Common HTML events include:`,
-              specialTheoryText: `Corresponding events can be added to HTML elements as attributes. For example: <p onclick="someFunc()">some text</p>`,
+              theoryText: `<p>You can write JavaScript code that executes when an <b>event</b> occurs, such as when a user clicks an HTML element, moves the mouse, or submits a form. When an event occurs on a target element, a <b>handler</b> function is executed. Common HTML events include:</p><img src="./assets/img/eventsExamples.png" alt="events examples">`,
+              specialTheoryText: `Corresponding events can be added to HTML elements as attributes. For example: <p <b>onclick="someFunc()</b>">some text</p>`,
               questionText: `The type of function that executes when an event occurs is called:`,
               answerOptions: ['event handler', 'event function', 'event name', 'event description'],
               correctAnswer: 'event handler',
           },
           {
+              theoryHeading: 'Handling Events',
+              theoryText: `<p>Let's display an alert popup when the user clicks a specified button:</p><div class="code-example">&lt;button onclick="show()"&gt;Click Me&lt;/button&gt;<br>&lt;script&gt;<br>function show() {<br>&nbsp;&nbsp;&nbsp;alert("Hi there");<br>} <br>&lt;/script&gt;</div><p>Event handlers can be assigned to elements.<b>For example:</b></p><div class="code-example">var x = document.getElementById("demo");<br>x.onclick = function () {<br>&nbsp;&nbsp;&nbsp;document.body.innerHTML = Date();<br>}</div>`,
+              specialTheoryText: `Corresponding events can be added to HTML elements as attributes. For example: <p <b>onclick="someFunc()</b>">some text</p>`,
+              questionText: `Fill in the blanks to call func() when the button is clicked.`,
+              answerOptions: '<div class="code-fragment">&lt;button <input type="text"> = "<input type="text">()"&gt;Click here&lt;/button&gt;</div>',
+              correctAnswer: ['onclick', 'func'],
+          },
+          {
               theoryHeading: 'Events',
-              theoryText: `The onload and onunload events are triggered when the user enters or leaves the page. These can be useful when performing actions after the page is loaded. Similarly, the window.onload event can be used to run code after the whole page is loaded. The onchange event is mostly used on textboxes. The event handler gets called when the text inside the textbox changes and focus is lost from the element.`,
+              theoryText: `<p>The <b>onload</b> and <b>onunload</b> events are triggered when the user enters or leaves the page. These can be useful when performing actions after the page is loaded.</p><div class="code-example">&lt;body onload="doSomething()"&gt;</div> <p>Similarly, the <b>window.onload</b> event can be used to run code after the whole page is loaded. <div class="code-example">window.onload ​= function() {<br>&nbsp;&nbsp;&nbsp;//some code <br>}</div><p>The onchange event is mostly used on textboxes. The event handler gets called when the text inside the textbox changes and focus is lost from the element.</p>`,
               specialTheoryText: `It’s important to understand events, because they are an essential part of dynamic web pages.`,
               questionText: `The type of function that executes when an event occurs is called:`,
               codeFragment: 'var body = document.getElementByTagName("body"); <br>body.<input type="text" required> = <input type="text" required>;',
@@ -1004,7 +1017,7 @@ const database = [
           },
           {
               theoryHeading: 'Event Listeners',
-              theoryText: `The addEventListener() method attaches an event handler to an element without overwriting existing event handlers. You can add many event handlers to one element. You can also add many event handlers of the same type to one element, i.e., two "click" events. element.addEventListener(event, function, useCapture); The first parameter is the event's type (like "click" or "mousedown"). The second parameter is the function we want to call when the event occurs. The third parameter is a Boolean value specifying whether to use event bubbling or event capturing. This parameter is optional, and will be described in the next lesson. Note that you don't use the "on" prefix for this event; use "click" instead of "onclick".`,
+              theoryText: `<p>The <b>addEventListener</b>() method attaches an event handler to an element without overwriting existing event handlers. You can add <i>many</i> event handlers to one element.</p> <p>You can also add many event handlers of the same type to one element, i.e., two "click" events.</p><div class="code-example">element.addEventListener(event, function, useCapture);</div><p> The first parameter is the event's <b>type</b> (like "click" or "mousedown"). The second parameter is the <b>function</b> we want to call when the event occurs. The third parameter is a Boolean value specifying whether to use event <b>bubbling</b> or event <b>capturing</b></p><p><b>Example:</b></p><div class="code-example">element.addEventListener("click", myFunction);<br>element.addEventListener("mouseover", myFunction);<br><br>function myFunction() {<br>&nbsp;&nbsp;&nbsp;alert("Hello World!");<br>}</div>. This parameter is optional, and will be described in the next lesson. Note that you don't use the "on" prefix for this event; use "click" instead of "onclick".`,
               specialTheoryText: `Corresponding events can be added to HTML elements as attributes. For example: <p onclick="someFunc()">some text</p>`,
               questionText: `Can multiple event handlers be added to a single element?`,
               answerOptions: ['No', 'Yes'],
@@ -1014,15 +1027,15 @@ const database = [
       [
           {
               theoryHeading: 'Event Propagation',
-              theoryText: `There are two ways of event propagation in the HTML DOM: bubbling and capturing. Event propagation allows for the definition of the element order when an event occurs. If you have a <p> element inside a <div> element, and the user clicks on the <p> element, which element's "click" event should be handled first? In bubbling, the innermost element's event is handled first and then the outer element's event is handled. The <p> element's click event is handled first, followed by the <div> element's click event. In capturing, the outermost element's event is handled first and then the inner. The <div> element's click event is handled first, followed by the <p> element's click event.`,
-              specialTheoryText: `Capturing goes down the DOM. Bubbling goes up the DOM.`,
+              theoryText: `<p>There are two ways of event propagation in the HTML DOM: <b>bubbling</b> and <b>capturing</b>.</p> <p>Event propagation allows for the definition of the element order when an event occurs. If you have a &lt;p&gt; element inside a &lt;div&gt; element, and the user clicks on the &lt;p&gt; element, which element's "click" event should be handled first?</p> <p>In <b>bubbling</b>, the innermost element's event is handled first and then the outer element's event is handled. The &lt;p&gt; element's click event is handled first, followed by the &lt;div&gt; element's click event.</p> <p>In <b>capturing</b>, the outermost element's event is handled first and then the inner. The &lt;div&gt; element's click event is handled first, followed by the &lt;p&gt; element's click event.</p>`,
+              specialTheoryText: `Capturing goes <b>down</b> the DOM. Bubbling goes <b>up</b> the DOM.`,
               questionText: `A paragraph is inside a div element. You want the paragraph’s click event to be handled first. You should use:`,
               answerOptions: ['Handling', 'Capturing', 'Bubbling'],
               correctAnswer: 'Bubbling',
           },
           {
               theoryHeading: 'Capturing vs. Bubbling',
-              theoryText: `The addEventListener() method allows you to specify the propagation type with the "useCapture" parameter. The default value is false, which means the bubbling propagation is used; when the value is set to true, the event uses the capturing propagation.`,
+              theoryText: `<p>The <b>addEventListener</b>() method allows you to specify the propagation type with the "<b>useCapture</b>" parameter. div class="code-example">addEventListener(event, function, useCapture)</div> <p>The default value is <b>false</b>, which means the bubbling propagation is used; when the value is set to <b>true</b>, the event uses the capturing propagation.</p><div class="code-example">// Capturing propagation <br>elem1.addEventListener("click", myFunction, true); <br><br>// Bubbling propagation <br>elem2.addEventListener("click", myFunction, false);</div>`,
               specialTheoryText: `This is particularly useful when you have the same event handled for multiple elements in the DOM hierarchy.`,
               questionText: `Fill the blanks to handle the click event and use capturing propagation.`,
               codeFragment: 'x.addEventListener("<input type="text">", func,<br><input type="text" required>);',
@@ -1032,7 +1045,7 @@ const database = [
       [
           {
               theoryHeading: 'Form Validation',
-              theoryText: `HTML5 adds some attributes that allow form validation. For example, the required attribute can be added to an input field to make it mandatory to fill in. More complex form validation can be done using JavaScript. The form element has an onsubmit event that can be handled to perform validation. `,
+              theoryText: `<p>HTML5 adds some attributes that allow form validation. For example, the <b>required</b> attribute can be added to an input field to make it mandatory to fill in.</p> <p>More complex form validation can be done using JavaScript. The form element has an <b>onsubmit</b> event that can be handled to perform validation.</p><p>For example, let's create a form with two inputs and one button. The text in both fields should be the same and not blank to pass the validation.</p><img src="./assets/img/code1.png" alt="form vadilation code"><p>Now we need to define the <b>validate</b>() function:</p><img src="./assets/img/code2.png" alt="form vadilation code">`,
               specialTheoryText: `The form will not get submitted if its onsubmit event returns false.`,
               questionText: `The form will submit to its action if onsubmit returns:`,
               answerOptions: ['false', 'true'],
@@ -1049,6 +1062,115 @@ const database = [
               questionText: `What is the output of this code?<br>&lt;div id="test"&gt;<br>&lt;p&gt;some text&lt;/p&gt;<br>&lt;/div&gt;<br>&lt;script&gt;<br>var el=document.getElementById("test");<br>alert(el.hasChildNodes());<br>&lt;/script&gt;`,
               answerOptions: ['undefined', 'false', 'true'],
               correctAnswer: 'true',
+          },
+      ]
+  ],
+  [
+      [
+          {
+              theoryHeading: 'ECMAScript 6',
+              theoryText: `<p><b>ECMAScript</b> (ES) is a scripting language specification created to standardize JavaScript.</p><p>The Sixth Edition, initially known as <b>ECMAScript 6</b> (ES6) and later renamed to <b>ECMAScript 2015</b>, adds significant new syntax for writing complex applications, including classes and modules, iterators and for/of loops, generators, arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, number and math enhancements, reflection, and proxies.</p><p>In other words, ES6 is a superset of JavaScript (ES5). The reason that ES6 became so popular is that it introduced new conventions and OOP concepts such as classes.</p>`,
+              specialTheoryText: `In this module, we cover the most important additions to ES6.So, let's jump right in!`,
+              questionText: `JavaScript and ES6 are different technologies for different purposes.`,
+              answerOptions: ['False', 'True'],
+              correctAnswer: 'False',
+          },
+      ],
+      [
+          {
+              theoryHeading: 'var & let',
+              theoryText: `<p>In ES6 we have three ways of declaring variables:</p><div class="code-example">var ​a = 10;<br>const ​b = 'hello';<br>let c = true;</div><p>The type of declaration used depends on the necessary scope. Scope is the fundamental concept in all programming languages that defines the visibility of a variable.</p><p>Unlike the <b>var</b> keyword, which defines a variable globally, or locally to an entire function regardless of block scope, <b>let</b> allows you to declare variables that are limited in scope to the block, statement, or expression in which they are used.</p><p><b>For example:</b></p><div class="code-example">if (true) {<br>&nbsp;&nbsp;&nbsp;let name = "Jack";<br>} <br>alert(name); // generates an error</div><p>In this case, the <b>name</b> variable is accessible only in the scope of the <b>if</b> statement because it was declared as <b>let</b>.</p>`,
+              specialTheoryText: `let is not subject to Variable Hoisting, which means that let declarations do not move to the top of the current execution context.`,
+              questionText: `What is the output of this code?
+              function letItBe() {
+                let v = 2;
+                if (true) {
+                  let v = 4;
+                  console.log(v);
+                }
+                console.log(v);
+              }
+              letItBe();`,
+              answerOptions: ['4 2', '2 2', '4 4', '2 4'],
+              correctAnswer: '4 2',
+          },
+          {
+              theoryHeading: 'const',
+              theoryText: `<p><b>const</b> variables have the same scope as variables declared using <b>let</b>. The difference is that const variables are <b>immutable</b> - they are not allowed to be reassigned.</p><p>For example, the following generates an exception:</p><div class="code-example">const a = "Hello";<br>a = "Bye";</div>`,
+              specialTheoryText: `const is not subject to Variable Hoisting too, which means that const declarations do not move to the top of the current execution context.Also note that ES6 code will run only in browsers that support it. Older devices and browsers that do not support ES6 will return a syntax error.`,
+              questionText: `Fill in the blanks to make a constant named total and the variable i that is only accessible inside the loop.`,
+              codeFragment: '<div class="code-fragment"><input type="text"> total = 100; <br>let sum = 0;<br>for(<input type="text">i = 0; i &lt; total; i++) {<br>&nbsp;&nbsp;&nbsp;sum += i;<br>}</div>',
+              correctAnswer: ['const', 'let'],
+          },
+          {
+              theoryHeading: 'Template Literals in ES6',
+              theoryText: '<p><b>Template literals</b> are a way to output variables in the string. Prior to ES6 we had to break the string, for example:</p><div class="code-example">let name = "David";<br>let msg = "Welcome " + name + "!"<br>console.log(msg);</div><p>ES6 introduces a new way of outputting variable values in strings. The same code above can be rewritten as:</p>div class="code-example">let name = "David";<br>let msg = `Welcome ${name}!`<br>console.log(msg);</div><p>Notice, that template literals are enclosed by the <b>backtick</b> (` `) character instead of double or single quotes.</p><p>The <b>${expression}</b> is a placeholder, and can include any expression, which will get evaluated and inserted into the template literal.</p><p><b>For example:</b></p><div class="code-example">let a = 8;<br>let b = 34;<br>let msg = `The sum is ${a + b}`;<br>console.log(msg);</div>',
+              specialTheoryText: `To escape a backtick in a template literal, put a backslash \ before the backtick.`,
+              questionText: `Fill in the blanks to output "We are learning ES6!".`,
+              codeFragment: '<div class="code-fragment">let n = 6;<br>let s = "ES";<br>let msg = `We are learning <input type="text">{s + n}!`;<br>console.log(<input type="text">)</div>',
+              correctAnswer: ['$', 'msg'],
+          }
+      ],
+      [
+          {
+              theoryHeading: 'Loops in ECMAScript 6',
+              theoryText: '<p>In JavaScript we commonly use the <b>for</b> loop to iterate over values in a list:</p><div class="code-example">let arr = [1, 2, 3];<br>for (let k = 0; k &lt; arr.length; k++) {<br>&nbsp;&nbsp;&nbsp;console.log(arr[k]);<br>}</div><p>The <b>for...in</b> loop is intended for iterating over the enumerable keys of an object.</p><p><b>For example:</b></p><div class="code-example">let obj = {a: 1, b: 2, c: 3};<br>for (let key in obj){<br>&nbsp;&nbsp;&nbsp;console.log(key);<br>}</div><p>ES6 introduces the new <b>for...of</b> loop, which creates a loop iterating over iterable objects.</p><p><b>For example:</b></p><div class="code-example">let list = ["x", "y", "z"];<br>for (let val of list) {<br>&nbsp;&nbsp;&nbsp;console.log(val);<br>}</div>',
+              specialTheoryText: `The for...of loop also works on the newly introduced collections (Map, Set, WeakMap, and WeakSet). We will learn about them in the upcoming lessons.Note that ES6 code will run only in browsers that support it. Older devices and browsers that do not support ES6 will return a syntax error.`,
+              questionText: `Fill in the blanks to iterate through all the characters using the for...of loop.`,
+              codeFragment: '<div class="code-fragment"><input type="text"> (let ch <input type="text"> "SoloLearn") {<br>&nbsp;&nbsp;&nbsp;console.log(ch);<br>} </div>',
+              correctAnswer: ['for', 'of'],
+          },
+          {
+              theoryHeading: 'Functions in ECMAScript 6',
+              theoryText: '<p>Prior to ES6, a JavaScript function was defined like this:</p><div class="code-example">function add(x, y) {<br>&nbsp;&nbsp;&nbsp;var sum = x + y;<br>&nbsp;&nbsp;&nbsp;console.log(sum);<br>}</div><p>ES6 introduces a new syntax for writing functions. The same function from above can be written as:</p><div class="code-example">const add = (x ,y) => { <br>&nbsp;&nbsp;&nbsp;let sum = x + y;<br>&nbsp;&nbsp;&nbsp;console.log(sum);<br>}</div><p>This new syntax is quite handy when you just need a simple function with one argument. You can skip typing <b>function</b> and <b>return</b>, as well as some parentheses and braces. <b>For example:</b></p><div class="code-example">const greet = x => "Welcome " + x;</div><p>If there are no parameters, an empty pair of parentheses should be used, as in:</p><div class="code-example">const x = () => alert("Hi");</div>',
+              specialTheoryText: `The code is shorter and looks pretty nice, doesn't it? :)`,
+              questionText: `Fill in the blanks to declare an arrow function that takes an array and prints the odd elements.`,
+              codeFragment: '<div class="code-fragment">const printOdds = (arr) <input type="text"> {<br>&nbsp;&nbsp;<input type="text">.forEach(<input type="text"> => {<br>&nbsp;&nbsp;&nbsp;&nbsp;if (el % 2 != 0) console.log(el);<br>&nbsp;&nbsp;});<br>} </div>',
+              correctAnswer: ['=>', 'arr', 'el'],
+          },
+          {
+              theoryHeading: 'Default Parameters in ES6',
+              theoryText: '<p>In ES6, we can put the default values right in the signature of the functions.</p><p><b>For example:</b></p><div class="code-fragment">const test = (a, b = 3, c = 42) => a + b + c;<br>console.log(test(5));</div>',
+              specialTheoryText: `Default value expressions are evaluated at function call time from left to right. This also means that default expressions can use the values of previously-filled parameters.`,
+              questionText: `What is the output of this code? <br>function magic(a, b = 40) {<br>&nbsp;&nbsp;return a + b;<br>} <br>console.log(magic(2));`,
+              codeFragment: '<div class="code-fragment"><input type="text"></div>',
+              correctAnswer: '42',
+          },
+      ],
+      [
+          {
+              theoryHeading: 'ES6 Objects',
+              theoryText: '<p>JavaScript variables can be <b>Object</b> data types that contain many values called <b>properties</b>.</p><p>An object can also have properties that are function definitions called <b>methods</b> for performing actions on the object.</p><p>ES6 introduces <b>shorthand</b> notations and <b>computed</b> property names that make declaring and using objects easier to understand.</p><p>The new method definition shorthand does not require the colon (:) or <b>function</b> keyword, as in the <b>grow</b> function of the <b>tree</b> object declaration:</p><div class="code-example">let tree = {<br>&nbsp;&nbsp;&nbsp;height: 10, <br>&nbsp;&nbsp;&nbsp;color: "green",<br>&nbsp;&nbsp;&nbsp;grow() {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.height += 2;<br>&nbsp;&nbsp;&nbsp;} <br>;<br>tree.grow();<br>console.log(tree.height); // 12</div><p>You can also use a property value shorthand when initializing properties with a variable by the same name.</p><p>For example, properties <b>height</b> and <b>health</b> are being initialized with variables named <b>height</b> and <b>health</b></p><div class="code-example">let height = 5;<br>let health = 100;<br><br>let athlete = {<br>&nbsp;&nbsp;&nbsp;height,<br>&nbsp;&nbsp;&nbsp;health <br>};</div><p>When creating an object by using duplicate property names, the last property will overwrite the prior ones of the same name.</p><p>For example:<b></b><div class="code-example">var a = {x: 1, x: 2, x: 3}</div>',
+              specialTheoryText: `Duplicate property names generated a SyntaxError in ES5 when using strict mode. However, ES6 removed this limitation.`,
+              questionText: `Fill in the blanks to make this code run and print 60.`,
+              codeFragment: '<div class="code-example">let car = {<br>&nbsp;&nbsp;speed: 40,<br>&nbsp;&nbsp;accelerate() {<br>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">.speed += 10;<br>&nbsp;&nbsp;} <br>};<br><input type="text">.accelerate();<br>car.accelerate();<br>console.log(car.<input type="text">);</div>',
+              correctAnswer: ['this', 'car', 'speed'],
+          },
+          {
+              theoryHeading: 'Computed Property Names',
+              theoryText: "<p>With ES6, you can now use <b>computed property</b> names. Using the square bracket notation [], we can use an expression for a property name, including concatenating strings. This can be useful in cases where we want to create certain objects based on user data (e.g. id, email, and so on).</p><p>Here are three examples:</p><p><b>Example 1:</b></p><div class='code-example'>let prop = 'name';<br>let id = '1234';<br>let mobile = '08923';<br><br>let user = { <br>&nbsp;&nbsp;&nbsp;[prop]: 'Jack',<br>&nbsp;&nbsp;&nbsp;[`user_${id}`]: `${mobile}`<br>};</div><p><b>Example 2:</b></p><div class='code-example'>var i = 0;<br>var a = { <br>&nbsp;&nbsp;&nbsp;  ['foo' + ++i]: i,<br>&nbsp;&nbsp;&nbsp;['foo' + ++i]: i,<br>&nbsp;&nbsp;&nbsp;['foo' + ++i]: i <br>};</div><p><b>Example 3:</b></p><div class='code-example'>var param = 'size';<br>var config = {<br>&nbsp;&nbsp;&nbsp;[param]: 12,<br>&nbsp;&nbsp;&nbsp;['mobile' + param.charAt(0).toUpperCase() + param.slice(1)]: 4 <br>};<br><br>console.log(config.mobileSize); // 4</div>",
+              specialTheoryText: `It is very useful when you need to create custom objects based on some variables.`,
+              questionText: `Fill in the blanks to create an object with its properties.`,
+              codeFragment: '<div class="code-fragment">let prop = "foo";<br>let o = {<br>&nbsp;&nbsp;&nbsp;<input type="text">prop]: "lol"<input type="text"><br>&nbsp;&nbsp;&nbsp;["b" + "ar"]<input type="text"> "123"<br>};</div>',
+              correctAnswer: ['[', ',', ':'],
+          }
+      ],
+      [
+          {
+              theoryHeading: 'Array Destructuring in ES6',
+              theoryText: "<p>The <b>destructuring</b> assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</p><p>ES6 has added a shorthand syntax for destructuring an array.The following example demonstrates how to unpack the elements of an array into distinct variables:</p><div class='code-example'>let arr = ['1', '2', '3'];<br>let [one, two, three] = arr;<br><br>console.log(one); // 1<br>console.log(two); // 2 <br>console.log(three); // 3</div><p>We can use also destructure an array returned by a function.<b>For example:</b></p><div class='code-example'>let a = () => {<br>&nbsp;&nbsp;&nbsp;return [1, 3, 2];<br>};<br><br>let [one, , two] = a();</div><p>Notice that we left the second argument's place empty.</p><p>The destructuring syntax also simplifies assignment and swapping values:</p><div class='code-example'>let a, b, c = 4, d = 8;<br>[a, b = 6] = [2]; // a = 2, b = 6 <br><br>[c, d] = [d, c]; // c = 8, d = 4</div>",
+              specialTheoryText: `Try it Yourself to play around with the code.`,
+              questionText: `What is the output of the following code?<br>let names = ['John', 'Fred', 'Ann'];<br>let [Ann, Fred, John] = names;<br>console.log(John);`,
+              answerOptions: ['John', 'Ann', 'Error', 'Fred'],
+              correctAnswer: 'Ann',
+          },
+          {
+              theoryHeading: 'Object Destructuring in ES6',
+              theoryText: '<p>Similar to Array destructuring, <b>Object destructuring</b> unpacks properties into distinct variables.</b></p><p><b>For example:</b></p><div class="code-example">let obj = {h:100, s: true};<br>let {h, s} = obj; <br><br>console.log(h); // 100 <br>console.log(s); // true</div><p>We can assign without declaration, but there are some syntax requirements for that:</p><div class="code-example">let a, b;<br>({a, b} = {a: "Hello ", b: "Jack"});<br><br>console.log(a + b); // Hello Jack</div><p>The <b>()</b> with a semicolon <b>(;)</b> at the end are <b>mandatory</b> when destructuring without a declaration. However, you can also do it as follows where the <b>()</b> are not required:</p><div class="code-example">let {a, b} = {a: "Hello ", b: "Jack"};<br>console.log(a + b);</div><p>You can also assign the object to new variable names.</p><p><b>For example:</b></p><div class="code-example">let o = {h: 42, s: true};<br>let {h: foo, s: bar} = o;<br><br>console.log(h); // Error <br>console.log(foo); // 42</div><p>Finally you can assign <b>default values</b> to variables, in case the value unpacked from the object is undefined.</p><p><b>For example</b></p><div class="code-example">let obj = {id: 42, name: "Jack"};<br>let {id = 10, age = 20} = obj;<br><br>console.log(id); // 42 <br>console.log(age); // 20</div>',
+              specialTheoryText: `Try it Yourself to play around with the code.`,
+              questionText: `What is the output of the following code?<br>const obj = {one: 1, two: 2};<br>let {one:first, two:second} = obj;<br>console.log(one);`,
+              answerOptions: ['the full object (obj)', 'Error', '2', '1'],
+              correctAnswer: 'Error',
           },
       ]
   ]
